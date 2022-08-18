@@ -405,6 +405,7 @@ div {
 .header {
   background: url(img/head.png) no-repeat center 0px;
   padding-bottom: 245px;
+  overflow: visible;
 }
 .header__content {
   max-width: 743px;
@@ -456,6 +457,7 @@ div {
 
 .about {
   padding: 140px 0 70px;
+  overflow: visible;
 }
 .about__box {
   align-items: center;
@@ -687,6 +689,9 @@ div {
   }
 }
 @media only screen and (max-height: 750px) {
+  .header {
+    background-size: cover;
+  }
   .header__box {
     margin-top: 90px;
   }
@@ -783,6 +788,9 @@ div {
   }
   .header__box {
     margin-top: 118px;
+  }
+  .header {
+    background-size: cover;
   }
 }
 @media (max-width: 991px) {
