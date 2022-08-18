@@ -529,6 +529,7 @@ div {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
   border-radius: 20px;
   margin-right: 59px;
+  max-width: 711px;
 }
 .play__text {
   margin-bottom: 20px;
@@ -685,6 +686,11 @@ div {
     width: 51%;
   }
 }
+@media only screen and (max-height: 750px) {
+  .header__box {
+    margin-top: 90px;
+  }
+}
 @media screen and (max-width: 1499px) {
   .about__pic {
     width: 46%;
@@ -750,6 +756,7 @@ div {
   .play__pic {
     width: 100%;
     margin: 0 auto 20px;
+    max-width: 100%;
   }
   .chat__box {
     flex-direction: column-reverse;
