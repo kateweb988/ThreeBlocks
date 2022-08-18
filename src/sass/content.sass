@@ -1,0 +1,210 @@
+.burger, .menu 
+  display: none
+.header 
+   background: url(img/head.png) no-repeat center 0px
+   padding-bottom: 245px
+   &__content 
+      max-width: 743px
+      width: 100%
+   &__box 
+      width: 100%
+      max-width: 1456px
+      margin: 235px auto 0
+   &__text 
+      max-width: 677px
+      margin-top: 54px
+   &__links 
+      margin-top: 51px
+      a 
+         margin-right: 16px
+         &:last-child
+            margin-right: 0
+.nav
+   padding: 32px 0
+   &__box 
+      align-items: center
+      justify-content: space-between
+   &__list 
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      width: 100%
+      max-width: 420px
+   &__link
+      font-size: 14px
+      line-height: 18px
+      color: #FFFFFF
+      margin-top: 5px
+   &__btn 
+      width: 160px
+      height: 30px
+.about 
+   padding: 140px 0 70px
+   &__box 
+      align-items: center
+   &__content 
+      width: 100%
+      max-width: 677px
+      flex: 1 0 auto
+      margin-left: 139px
+      position: relative
+      top: -63px
+   &__text 
+      margin-bottom: 20px
+.features
+   padding: 70px 0 100px
+   h2 
+      text-align: center
+   &__sum 
+      font-size: 48px
+      line-height: 110%
+      color: #FFFFFF
+      font-family: 'Fuji'
+   &__box 
+      align-items: center
+      flex-wrap: wrap
+      justify-content: center
+      margin-top: 86px
+   &__item 
+      margin-right: 180px
+      text-align: center
+      width: 100%
+      max-width: 307px
+      &:last-child
+         margin-right: 0
+   &__text 
+      max-width: 280px
+      margin: 10px auto
+   &__pic 
+      position: relative
+      top: -10px
+.play 
+   padding: 84px 0 70px
+   h2 
+      text-align: center
+   &__name 
+      font-size: 48px
+      line-height: 110%
+      font-family: 'Fuji'
+      margin-bottom: 35px
+   &__box 
+      width: 100%
+      max-width: 1320px
+      margin: 142px auto 0
+   &__pic 
+      filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25))
+      border-radius: 20px
+      margin-right: 59px
+   &__text 
+      margin-bottom: 20px
+   &__content 
+      position: relative
+      top: 55px
+   &__btn 
+      margin-top: 31px
+.chat 
+   padding: 70px 0
+   &__box 
+      width: 100%
+      max-width: 1320px
+      margin: 0 auto 
+      align-items: center
+   &__pic 
+      max-width: 402px
+      margin-left: 83px
+   &__content 
+      max-width: 795px
+      width: 100%
+      flex: 1 0 auto
+.ask 
+   padding: 70px 0
+   &__box 
+      margin: 60px auto 0
+      width: 100%
+      max-width: 858px
+   h2 
+      text-align: center
+.accordeon 
+   width: 100%
+.accordeon__item
+   margin-bottom: 10px
+   &:hover 
+      .accordeon__button 
+         color: $green
+.accordeon__button 
+   width: 100%
+   text-align: left
+   padding: 24px 40px 29px
+   background: #282828
+   border-radius: 10px
+   border: none
+   font-weight: 600
+   font-size: 18px
+   line-height: 140%
+   color: #FFFFFF
+   cursor: pointer
+   position: relative
+   transition: all 0.5s ease
+   &:after 
+      content: ''
+      position: absolute
+      right: 20px
+      background: url(img/arr-down.svg) no-repeat 
+      width: 15px
+      height: 15px
+      bottom: 50%
+      margin-bottom: -12px
+      transition: all 0.5s ease
+   &.active 
+      border-radius: 10px 10px 0 0 
+      &:after 
+         content: ''
+         position: absolute
+         right: 20px
+         background: url(img/arr-top.svg) no-repeat 
+         width: 15px
+         height: 15px
+         bottom: 50%
+         margin-bottom: -12px
+         transition: all 0.5s ease
+.accordeon__panel  
+   max-height: 0
+   overflow: hidden
+   transition: max-height .5s ease
+   background: #282828
+   padding: 0 40px
+   margin-left: 0
+   border-radius: 0px 0 10px 10px
+   transition: all 0.5s ease
+.panel__text
+   list-style-type: none
+   font-weight: 300
+   font-size: 16px
+   line-height: 150%
+   color: #FFFFFF
+   margin-bottom: 10px
+   &:last-child
+      padding-bottom: 40px
+.footer 
+   padding: 53px 0 80px
+   .nav__list 
+      position: relative
+      left: 104px
+   &__link
+      width: 30px
+      height: 30px
+      margin-left: 20px
+      transition: all 0.5s ease
+      &:nth-child(1), &:nth-child(2)
+         position: relative
+         top: -3px
+      &:hover 
+         .icon 
+            fill: $green
+      .icon
+         width: 100%
+         height: 100%
+         fill: white
+         transition: all 0.5s ease
+   &__socials 
+      align-items: center
