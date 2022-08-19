@@ -403,9 +403,14 @@ div {
 }
 
 .header {
-  background: url(img/head.png) no-repeat center 0px;
   padding-bottom: 245px;
   overflow: visible;
+}
+.header__bg {
+  position: absolute;
+  right: -502px;
+  top: -246px;
+  z-index: -1;
 }
 .header__content {
   max-width: 743px;
@@ -415,6 +420,7 @@ div {
   width: 100%;
   max-width: 1456px;
   margin: 235px auto 0;
+  position: relative;
 }
 .header__text {
   max-width: 677px;
@@ -433,22 +439,32 @@ div {
 .nav {
   padding: 32px 0;
 }
+.nav__item:last-child {
+  margin-right: 0;
+}
+.nav__item:last-child .nav__link {
+  margin-right: 0;
+}
 .nav__box {
   align-items: center;
   justify-content: space-between;
 }
 .nav__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 420px;
+  max-width: 450px;
+  position: relative;
+  top: -7px;
+  justify-content: center;
 }
 .nav__link {
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-right: 30px;
+  display: block;
 }
 .nav__btn {
   width: 160px;
@@ -689,11 +705,21 @@ div {
   }
 }
 @media only screen and (max-height: 750px) {
-  .header {
-    background-size: cover;
-  }
   .header__box {
     margin-top: 90px;
+  }
+  .header__bg {
+    width: 70%;
+    right: -309px;
+    top: -95px;
+  }
+}
+@media only screen and (max-height: 750px) and (max-width: 1400px) {
+  .header__bg {
+    right: -322px !important;
+  }
+  .header {
+    padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 1499px) {
@@ -707,6 +733,9 @@ div {
   }
   .features__item {
     margin-right: 139px;
+  }
+  .header__bg {
+    right: -646px;
   }
 }
 @media screen and (max-width: 1299px) {
@@ -728,6 +757,9 @@ div {
   }
   .play__content {
     top: 10px;
+  }
+  .header__bg {
+    right: -741px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -792,6 +824,18 @@ div {
   .header {
     background-size: cover;
   }
+  .nav__box .nav__link {
+    margin-right: 20px;
+  }
+  .header {
+    padding-bottom: 108px;
+  }
+  .header__bg {
+    opacity: 0.5;
+    width: 100%;
+    right: -395px;
+    top: -128px;
+  }
 }
 @media (max-width: 991px) {
   .nav .nav__list {
@@ -801,7 +845,7 @@ div {
     width: 120px;
   }
   .about__pic {
-    width: 100%;
+    width: 68%;
   }
   .chat {
     padding: 40px 0;
@@ -926,6 +970,9 @@ div {
   .burger .nav__list li {
     margin-bottom: 20px;
   }
+  .burger .nav__list li a {
+    margin-right: 0;
+  }
   .header__box {
     margin-top: 40px;
   }
@@ -955,6 +1002,14 @@ div {
   }
   .panel__text {
     font-size: 14px;
+  }
+  .about__pic {
+    width: 100%;
+  }
+  .header__bg {
+    width: 100%;
+    right: -264px;
+    top: -59px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1020,5 +1075,8 @@ div {
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .header__bg {
+    display: none;
   }
 }

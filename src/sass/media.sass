@@ -4,10 +4,17 @@
    .about__pic
       width: 51%
 @media only screen and (max-height: 750px)
-   .header 
-      background-size: cover
    .header__box
       margin-top: 90px
+   .header__bg
+      width: 70%
+      right: -309px
+      top: -95px
+@media only screen and (max-height: 750px) and (max-width: 1400px) 
+   .header__bg
+      right: -322px !important
+   .header
+      padding-bottom: 100px
 @media screen and (max-width: 1499px) 
    .about__pic
       width: 46%
@@ -16,6 +23,8 @@
       max-width: 589px
    .features__item
       margin-right: 139px
+   .header__bg 
+      right: -646px
 @media screen and (max-width: 1299px) 
    .features__item 
       margin-right: 84px
@@ -30,6 +39,8 @@
       left: 42px
    .play__content 
       top: 10px
+   .header__bg 
+      right: -741px
 @media screen and (max-width: 1199px) 
    .about__box
       flex-direction: column
@@ -74,13 +85,22 @@
       margin-top: 118px
    .header 
       background-size: cover
+   .nav__box .nav__link
+      margin-right: 20px
+   .header
+      padding-bottom: 108px
+   .header__bg
+      opacity: 0.5
+      width: 100%
+      right: -395px
+      top: -128px
 @media ( max-width: 991px )
    .nav .nav__list
       max-width: 330px
    .nav__btn
       width: 120px
    .about__pic
-      width: 100%
+      width: 68%
    .chat
       padding: 40px 0
 @media screen and (max-width: 767px)
@@ -185,6 +205,8 @@
          max-width: 100%
          li 
             margin-bottom: 20px
+            a 
+               margin-right: 0
    .header__box
       margin-top: 40px
    h1 
@@ -206,6 +228,12 @@
       padding: 0 40px 0 20px
    .panel__text
       font-size: 14px
+   .about__pic
+      width: 100%
+   .header__bg 
+      width: 100%
+      right: -264px
+      top: -59px
 @media screen and (max-width: 576px)
    input, textarea, select 
       -webkit-appearance: none
@@ -252,5 +280,6 @@
       width: 100%
       justify-content: space-between
       flex-wrap: wrap
-
+   .header__bg 
+      display: none
    
