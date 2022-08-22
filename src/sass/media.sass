@@ -3,6 +3,7 @@
       margin-left: 40px
    .about__pic
       width: 51%
+   
 @media only screen and (max-height: 750px)
    .header__box
       margin-top: 90px
@@ -15,9 +16,22 @@
       right: -322px !important
    .header
       padding-bottom: 100px
+@media screen and (max-width: 1599px) 
+   .game-right__content
+      max-width: 800px
+   .game-right__item
+      margin-right: 30px
+   .game-right__bottom
+      width: 100%
+   .game-right__block
+      width: 95px
 @media screen and (max-width: 1499px) 
    .about__pic
       width: 46%
+   .game-right__content
+      padding: 31px 20px 20px
+   .game-right__choose
+      font-size: 21px
 @media screen and (max-width: 1399px) 
    .about__content
       max-width: 589px
@@ -41,6 +55,13 @@
       top: 10px
    .header__bg 
       right: -741px
+   .game-right__num
+      font-size: 14px
+   .game-right__one:nth-child(2) .game-right__num 
+      font-size: 61px
+      line-height: 51px
+   .game-right__block
+      width: 64px
 @media screen and (max-width: 1199px) 
    .about__box
       flex-direction: column
@@ -94,6 +115,43 @@
       width: 100%
       right: -395px
       top: -128px
+   .game-right__box
+      flex-direction: column
+      align-items: center
+      justify-content: center
+   .game-right__item
+      margin-right: 0
+      margin-bottom: 10px
+      width: 42%
+   .game-right__content 
+      max-width: 466px
+   .game-right__bottom
+      flex-direction: column
+      height: auto
+   .game-right__choose
+      padding-right: 0
+      border: none
+      max-width: 100%
+      margin-bottom: 20px
+   .game-right__colors
+      padding: 0
+      border: none
+   .game-right__block
+      width: 100px
+   .game-form
+      margin-top: 20px
+   .game-right__form
+      padding-left: 0
+      width: 100%
+      max-width: 100%
+   .game-form__btn
+      margin-top: 17px
+   .game-form__item
+      top: 54px
+   .not-connect__block p
+      font-size: 27px
+   .not-connect__block
+      top: 44%
 @media ( max-width: 991px )
    .nav .nav__list
       max-width: 330px
@@ -103,6 +161,146 @@
       width: 68%
    .chat
       padding: 40px 0
+   .game-right__top
+      display: none !important
+   .game-left
+      height: auto
+      width: 100%
+      position: relative
+      max-width: 100%
+      padding: 20px
+   .game__logo
+      margin-left: 0
+   .game-left__list, .game-left__footer
+      display: none
+   .game__box 
+      flex-direction: column
+   .game-left
+      .burger 
+         position: fixed
+         flex-direction: column
+         right: -150%
+         top: 0px
+         z-index: 100000
+         display: flex
+         box-sizing: border-box
+         transition: .3s all ease-in-out
+         width: auto
+         height: auto
+         background-color: #000c28
+         .game-right__top
+            display: flex !important
+            background: transparent
+         .game-left__list
+            display: block !important
+      .burger.active 
+         right: 0px
+         top: 0px
+         max-width: 100%
+         padding: 70px 30px
+         height: 100vh
+         width: 100%
+      .menu 
+         display: flex
+         position: absolute
+         top: 40px
+         right: 29px
+         width: 40px
+      .menu .button 
+         position: relative
+         display: flex
+         z-index: 1000000
+         right: -8px
+         top: -8px
+         width: 40px
+         height: 19px
+         align-items: center
+         justify-content: center
+         margin-left: auto
+      .menu .button.active 
+         position: fixed
+         right: 15px
+         top: 38px
+      .menu .button span 
+         position: absolute
+         top: calc(50% - 1px)
+         transition: .3s all ease-in-out
+         width: 24px
+         height: 3px
+         border-radius: 1px
+         background-color: $green
+      .menu .button span::before 
+         content: ''
+         position: absolute
+         top: -8px
+         transition: .3s all ease-in-out
+         width: 24px
+         height: 3px
+         border-radius: 1px
+         background-color: $green
+      .menu .button span::after 
+         content: ''
+         position: absolute
+         bottom: -8px
+         transition: .3s all ease-in-out
+         width: 24px
+         height: 3px
+         border-radius: 1px
+         background-color: $green
+      .menu .button.active span 
+         background-color: transparent !important
+         width: 24px
+      .menu .button.active span::before 
+         content: ''
+         width: 24px
+         top: calc(50% - 2px)
+         transform: rotate(45deg)
+      .menu .button.active span::after 
+         content: ''
+         bottom: calc(50% - 1px)
+         transform: rotate(-44deg)
+         background-color: $green
+         width: 24px
+   .game-left__link
+      margin: 0 auto
+   .game-right
+      padding-left: 0
+   .game-right__content
+      max-width: 100%
+   .game-right__flex
+      flex-direction: column
+   .game-right__bottom
+      padding-bottom: 30px
+   .game-chat
+      flex-direction: initial
+      justify-content: space-between
+      padding: 0 20px
+      width: 100%
+      max-width: 100%
+   .game-chat__chat
+      max-width: 290px
+      flex: 1 0 auto
+      max-height: 409px
+   .game-chat__history
+      max-width: 290px
+   .game__footer 
+      display: flex
+      width: 100%
+      padding: 40px 20px 20px
+      justify-content: center
+   .game-right__block
+      width: 100%
+   .game-right__colors
+      width: 100%
+   .game-chat__chat
+      display: flex
+      flex-direction: column
+   .game-chat-form
+      margin-top: auto
+   .game-chat__scroll
+      height: 287px
+   .not-connect__block 
+      top: 51%
 @media screen and (max-width: 767px)
    .burger 
       position: fixed
@@ -234,6 +432,24 @@
       width: 100%
       right: -264px
       top: -59px
+   .game-chat__history, .game-chat__chat
+      max-width: 41%
+   .chat__name 
+      font-size: 11px
+   .burger .game-right__top
+      flex-direction: column
+      padding: 0
+   .game-right__el
+      margin-bottom: 25px
+   .game .footer__socials
+      width: auto
+   .game-chat__chat
+      display: flex
+      flex-direction: column
+   .game-chat-form
+      margin-top: auto
+   .game-chat__scroll
+      height: 287px
 @media screen and (max-width: 576px)
    input, textarea, select 
       -webkit-appearance: none
@@ -282,4 +498,42 @@
       flex-wrap: wrap
    .header__bg 
       display: none
+   .game-left .burger
+      right: -254%
+   .game-left
+      padding: 10px
+   .game__logo 
+      position: relative
+      top: 3px
+   .game-left .menu
+      top: 29px
+      right: 10px
+   .game-right__wrap
+      flex-wrap: wrap
+      justify-content: center
+      flex-direction: column
+   .game-right__id
+      width: 100%
+      margin: 0 auto 10px
+      text-align: center
+   .game-right__info
+      margin-top: 20px
+   .game__news
+      margin-right: 0
+      margin-left: 0
+   .game__btn
+      margin-right: 0
+      margin-bottom: 26px
+   .game-right__item
+      width: 100%
+   .game-right__box
+      padding: 0 10px
+   .game-chat
+      flex-direction: column
+   .game-chat__history, .game-chat__chat
+      max-width: 100% !important
+   .game-chat__scroll 
+      height: 248px
+   .not-connect__block p
+      font-size: 23px
    
