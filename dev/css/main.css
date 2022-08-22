@@ -549,6 +549,7 @@ div {
   border-radius: 20px;
   margin-right: 59px;
   max-width: 711px;
+  object-fit: contain;
 }
 .play__text {
   margin-bottom: 20px;
