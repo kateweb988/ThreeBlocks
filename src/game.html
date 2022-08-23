@@ -225,7 +225,14 @@
 								14:29
 							</div>
 							<div class="game-right__box d-flex">
-								<div class="game-right__item">
+								<!-- состояния для .game-right__item: -->
+								<!-- selected - для выбранных цветов (Анимация выбора).
+									-- По истечению вермени и когда победивший цвет определен, этот класс нужно убрать -->
+								<!-- leader - для лидирующего цвета (иконка кубка) -->
+								<!-- winner - победителю (яркий цвет + анимация победы). класс leader нужно оставить для отображения кубка -->
+								<!-- loser - проигравшим цветам (сделает их бледными) -->
+
+								<div class="game-right__item selected">
 									<div class="game-right__info d-flex">
 										<div class="game-right__one">
 											<p class="game-right__usdt">USDT</p>
@@ -246,8 +253,11 @@
 											</p>
 										</div>
 									</div>
-									<img src="css/img/fig1.svg" alt="" class="game-right__pic">
+									<div class="colorpick colorpick_blue">
+										<div class="colorpick__coube"></div>
+									</div>
 								</div>
+
 								<div class="game-right__item">
 									<div class="game-right__info d-flex">
 										<div class="game-right__one">
@@ -269,9 +279,12 @@
 											</p>
 										</div>
 									</div>
-									<img src="css/img/fig2.svg" alt="" class="game-right__pic">
+									<div class="colorpick colorpick_yelllow">
+										<div class="colorpick__coube"></div>
+									</div>
 								</div>
-								<div class="game-right__item">
+
+								<div class="game-right__item leader">
 									<div class="game-right__info d-flex">
 										<div class="game-right__one">
 											<p class="game-right__usdt">USDT</p>
@@ -292,7 +305,9 @@
 											</p>
 										</div>
 									</div>
-									<img src="css/img/fig3.svg" alt="" class="game-right__pic">
+									<div class="colorpick colorpick_red">
+										<div class="colorpick__coube"></div>
+									</div>
 								</div>
 							</div>
 							<div class="game-right__bottom d-flex">

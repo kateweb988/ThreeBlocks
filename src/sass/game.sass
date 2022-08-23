@@ -1,10 +1,10 @@
 .body-game
     background: linear-gradient(180deg, #2B2B2B 0%, #272727 86.25%)
-.game 
-    &__footer 
+.game
+    &__footer
         display: none
-    &-form 
-        &__item 
+    &-form
+        &__item
             position: absolute
             right: 12px
             top: 33px
@@ -13,13 +13,13 @@
             line-height: 18px
             color: #B1AFCD
             opacity: 0.7
-        label 
+        label
             font-weight: 300
             font-size: 12px
             line-height: 16px
             margin-bottom: 6px
             display: block
-        &__input 
+        &__input
             width: 100%
             height: 40px
             padding-left: 14px
@@ -28,14 +28,14 @@
             border: 1px solid transparent
             transition: 0.5s
             color: white
-            &:focus 
+            &:focus
                 border: 1px solid $green
-        &__max 
+        &__max
             margin-top: 5px
             font-weight: 300
             font-size: 10px
             line-height: 13px
-        &__btn 
+        &__btn
             width: 100%
             height: 40px
             margin-top: 9px
@@ -43,15 +43,15 @@
         margin-top: auto
         .footer__link:nth-child(1), .footer__link:nth-child(2)
             top: -1px
-        .icon 
+        .icon
             fill: #535353
-    .footer__link 
+    .footer__link
         width: 20px
         height: 20px
         margin-left: 0
         margin-right: 10px
-        &:hover 
-            .icon 
+        &:hover
+            .icon
                 fill: white
     &-left
         flex: 1 0 auto
@@ -64,25 +64,25 @@
         position: fixed
         transition: 0.5s
         background: #0E0E0E
-        &__com 
+        &__com
             font-size: 14px
             line-height: 100%
             color: #535353
             margin-top: 11px
-        &__footer 
+        &__footer
             margin-top: auto
-        &__list 
+        &__list
             margin-top: 28px
-            .icon 
+            .icon
                 transition: 0.5s
             li
                 margin-bottom: 5px
                 transition: 0.5s
-                &:hover 
-                    p 
+                &:hover
+                    p
                         color: $green
                 &:first-child
-                    .icon 
+                    .icon
                         stroke: white
                 &:last-child
                     margin-top: 17px
@@ -112,7 +112,7 @@
                 margin-left: 17px
                 font-weight: 400
                 transition: 0.5s
-            .icon 
+            .icon
                 width: 20px
                 height: 20px
                 // fill: white
@@ -122,14 +122,12 @@
         padding-left: 239px
         transition: 0.5s
         background: linear-gradient(180deg, #2B2B2B 0%, #272727 86.25%)
-        &__pic 
-            width: 100%
-        &__form 
+        &__form
             padding-left: 21px
             width: 100%
             max-width: 200px
             position: relative
-        &__bottom 
+        &__bottom
             margin-top: 56.5px
             align-items: center
             justify-content: space-between
@@ -148,7 +146,7 @@
                     top: 0
                     background: rgba(26, 26, 26, 0.95)
                     content: ""
-        &__choose 
+        &__choose
             height: 100%
             font-size: 25px
             line-height: 110%
@@ -160,19 +158,19 @@
             align-items: center
             padding-right: 20px
             border-right: 1px solid #3A3A3A
-        &__set 
+        &__set
             width: 100%
             height: 50px
             border-radius: 5px
-        &__block 
+        &__block
             width: 150px
             margin-right: 15px
             position: relative
             border: 2px solid transparent
             cursor: pointer
-            &.checked 
+            &.checked
                 .game-right__set
-                    &:before 
+                    &:before
                         content: ""
                         display: block
                         filter: blur(50px)
@@ -189,7 +187,7 @@
                         display: block
                         width: 24px
                         height: 24px
-                        background: url(img/check.svg) no-repeat 
+                        background: url(img/check.svg) no-repeat
                         position: absolute
                         top: 50%
                         left: 50%
@@ -206,16 +204,16 @@
             &:nth-child(3)
                 .game-right__set
                     background: #E84288
-        &__sub 
+        &__sub
             font-weight: 300
             font-size: 14px
             margin-bottom: 5px
-        &__colors 
+        &__colors
             padding: 0 23px
             height: 100%
             align-items: center
             border-right: 1px solid #3A3A3A
-        &__one 
+        &__one
             text-align: left
             &:nth-child(2)
                 text-align: center
@@ -226,37 +224,39 @@
                     font-size: 80px
                     line-height: 63px
             &:last-child
-                text-align: right      
-        &__info 
+                text-align: right
+        &__info
             justify-content: space-between
-        &__usdt 
+            transition: transform .5s ease-in-out
+        &__usdt
             font-weight: 300
             font-size: 12px
             line-height: 16px
             margin-bottom: 3px
             display: block
-        &__num 
+        &__num
             font-size: 16px
             line-height: 19px
             font-family: 'Fuji'
-        &__box 
+        &__box
             align-items: flex-start
             flex-wrap: wrap
             justify-content: space-between
             width: 100%
-        &__item 
+        &__item
             width: 30%
             margin-right: 50px
             text-align: center
+            transition: filter .5s
             &:last-child
                 margin-right: 0
-        &__content 
+        &__content
             padding: 31px 0px 20px
             height: 100%
             width: 100%
             max-width: 1000px
             margin: 0 auto
-        &__time 
+        &__time
             width: 180px
             height: 60px
             background: #1A1A1A
@@ -271,17 +271,17 @@
             font-family: 'Fuji'
             justify-content: center
             margin: 0 auto 31px
-            .icon 
+            .icon
                 width: 40px
                 height: 40px
                 margin-right: 5px
-        &__el 
+        &__el
             font-weight: 400
             font-size: 12px
             line-height: 16px
             display: flex
             align-items: center
-            &:before 
+            &:before
                 content: ""
                 display: block
                 width: 10px
@@ -289,132 +289,132 @@
                 background: $green
                 margin-right: 12px
                 border-radius: 50%
-        &__wrap 
+        &__wrap
             align-items: center
-        &__top 
+        &__top
             padding: 16px 38px 19px 33px
             align-items: center
             justify-content: space-between
             background: #1A1A1A
-        &__flex 
+        &__flex
             justify-content: space-between
             margin-right: 40px
             width: 100%
-        &__id 
+        &__id
             font-weight: 400
             font-size: 12px
             line-height: 16px
             margin-right: 30px
-        &__info 
+        &__info
             align-items: center
             cursor: pointer
-            &:hover 
+            &:hover
                 .game-right__name
                     color: $green
         &__ava
             width: 28px
             height: 28px
             margin-right: 9px
-            img 
+            img
                 width: 100%
                 height: 100%
                 border-radius: 3px
-        &__name 
+        &__name
             font-size: 13px
             line-height: 17px
             transition: 0.5s
-        &__btn 
+        &__btn
             margin-left: 10px
-    &__btn 
+    &__btn
         width: 160px
         height: 28px
         margin-right: 0px
     &__code
         color: #A1A1A1
-    &-chat 
+    &-chat
         width: 100%
         max-width: 290px
-        flex: 1 0 auto 
+        flex: 1 0 auto
         height: 100%
         display: flex
         flex-direction: column
         padding: 20px 40px 20px 0
-        &__scroll 
+        &__scroll
             height: 257px
             overflow: auto
             padding-right: 17px
-        &__btn 
+        &__btn
             position: absolute
             top: 18px
             right: 1px
             background: transparent
             border: none
             transition: 0.5s
-            .icon 
+            .icon
                 width: 19px
                 height: 18px
                 fill: white
-            &:hover 
-                .icon 
+            &:hover
+                .icon
                     fill: $green
-        &-form 
+        &-form
             width: 94%
             position: relative
-        &__item 
+        &__item
             font-weight: 300
             font-size: 12px
             line-height: 140%
             margin-bottom: 6px
-            .game-chat__id.red 
+            .game-chat__id.red
                 color: #F27272
             .game-chat__id.yellow
                 color: #E8D842
             .game-chat__id.green
                 color: #42E8E0
-        &__chat 
+        &__chat
             width: 100%
             background: #1A1A1A
             border-radius: 5px
             padding: 20px 0px 10px 16px
             .game-chat__name
                 margin-bottom: 15px
-        &__table 
+        &__table
             width: 100%
-            tr 
-                td 
+            tr
+                td
                     font-weight: 300
                     font-size: 12px
                     padding-bottom: 7px
-                    &.green 
+                    &.green
                         color: $green
-                    &.red 
+                    &.red
                         color: red
                     &:nth-child(2)
                         text-align: center
                         font-size: 11px
-                    &:last-child 
+                    &:last-child
                         text-align: right
                         font-size: 11px
                         letter-spacing: 0.392857px
-        &__all 
+        &__all
             font-weight: 300
             font-size: 12px
             line-height: 16px
             color: #42E8E0
             transition: 0.5s
-            &:hover 
+            &:hover
                 color: white
-        &__top 
+        &__top
             align-items: center
             justify-content: space-between
             margin-bottom: 20px
-        &__name 
+        &__name
             font-weight: 400
             font-size: 12px
             line-height: 16px
             letter-spacing: 0.02em
             text-transform: uppercase
-        &__history 
+        &__history
             width: 100%
             height: 409px
             background: #1A1A1A
@@ -422,7 +422,7 @@
             overflow: auto
             padding: 20px 16px 25px
             margin-bottom: 20px
-            flex: 1 0 auto 
+            flex: 1 0 auto
             max-height: 409px
     &__logo
         width: 137px
@@ -431,7 +431,7 @@
         img
             width: 100%
             height: 100%
-    &__news 
+    &__news
         display: flex
         align-items: center
         justify-content: center
@@ -447,11 +447,11 @@
         margin-right: 25px
         margin-left: 25px
         transition: 0.5s
-        .icon 
+        .icon
             width: 10px
             height: 12px
             margin-right: 4px
-        &:hover 
+        &:hover
             color: white
             -webkit-box-shadow: -2px 4px 32px 0px rgba(66,232,224,1)
             -moz-box-shadow: -2px 4px 32px 0px rgba(66,232,224,1)
@@ -465,7 +465,7 @@
 .game-right__block:nth-child(3).checked
     .game-right__set
         border: 2px solid #9CFFFA
-.game-chat__input 
+.game-chat__input
     width: 100%
     height: 37px
     background: #2B2B2B
@@ -479,13 +479,13 @@
     font-size: 12px
     &:focus
         border: 1px solid $green
-::-webkit-scrollbar 
+::-webkit-scrollbar
     width: 2px
     background-color: #f9f9fd
-::-webkit-scrollbar-thumb 
+::-webkit-scrollbar-thumb
     border-radius: 10px
     background-color: $green
-::-webkit-scrollbar-track 
+::-webkit-scrollbar-track
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
     border-radius: 10px
     background-color: #f9f9fd
@@ -497,7 +497,7 @@
     width: 100%
     height: 100%
     z-index: 2
-    p 
+    p
         font-size: 32px
         line-height: 110%
         text-align: center
@@ -508,3 +508,118 @@
     width: 200px
     height: 35px
     margin: 0 auto
+
+.colorpick
+    position: relative
+    display: flex
+    align-items: end
+    padding-bottom: 70px
+    width: 300px
+    height: 450px
+    background-position: bottom center
+    background-repeat: no-repeat
+    background-size: 100%
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 120px
+        background-position: bottom center
+        background-repeat: no-repeat
+        background-size: 100%
+        z-index: 1
+        transition: transform .5s ease-in-out
+    &__coube
+        position: relative
+        width: 100%
+        height: 340px
+        background-position: bottom center
+        background-repeat: no-repeat
+        background-size: 100%
+        transition: transform .5s ease-in-out, filter .5s ease
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            left: 0
+            top: 155px
+            width: 100%
+            height: 130px
+            background: url(/css/img/colorpick/leader.svg) center center no-repeat
+            opacity: 0
+            transition: opacity .3s
+    &_blue
+        background-image: url(/css/img/colorpick/footer_blue.svg)
+        &:before
+            background-image: url(/css/img/colorpick/polygon_blue.svg)
+        .colorpick
+            &__coube
+                background-image: url(/css/img/colorpick/coube_blue.svg)
+    &_yelllow
+        background-image: url(/css/img/colorpick/footer_yellow.svg)
+        &:before
+            background-image: url(/css/img/colorpick/polygon_yellow.svg)
+        .colorpick
+            &__coube
+                background-image: url(/css/img/colorpick/coube_yellow.svg)
+    &_red
+        background-image: url(/css/img/colorpick/footer_red.svg)
+        &:before
+            background-image: url(/css/img/colorpick/polygon_red.svg)
+        .colorpick
+            &__coube
+                background-image: url(/css/img/colorpick/coube_red.svg)
+
+.game-right__item
+    &.selected
+        .game-right__info
+            transform: translateY(-20px)
+        .colorpick
+            &:before
+                transform: translateY(-20px)
+            &__coube
+                transform: translateY(-25px)
+            &_blue
+                .colorpick
+                    &__coube
+                        filter: drop-shadow(0 0 25px #42E8E0)
+            &_red
+                .colorpick
+                    &__coube
+                        filter: drop-shadow(0 0 25px #E8D742)
+            &_yelllow
+                .colorpick
+                    &__coube
+                        filter: drop-shadow(0 0 25px #E84288)
+    &.leader
+        .colorpick
+            &__coube
+                &:before
+                    opacity: 1
+    &.loser
+        filter: grayscale(.5)
+    &.winner
+        filter: brightness(1.1) saturate(1.1) drop-shadow(0 0 30px gold)
+        .colorpick
+            &__coube
+                transform-origin: center bottom
+                animation-name: bounce
+                animation-duration: 1s
+                animation-fill-mode: bot
+
+
+@keyframes bounce
+    0%, 20%, 53%, 80%, 100%
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+        transform: translate3d(0,0,0)
+    40%, 43%
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060)
+        transform: translate3d(0, -30px, 0)
+    70%
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060)
+        transform: translate3d(0, -15px, 0)
+    90%
+        transform: translate3d(0,-4px,0)
