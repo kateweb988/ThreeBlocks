@@ -34,7 +34,7 @@
 					</a>
 					<div class="game__scroll">
 						<ul class="game-left__list">
-							<li class="active">
+							<li>
 								<a href="#" class="d-flex game-left__link">
 									<svg class="icon"><use xlink:href="css/img/svg-sprite.svg#menu1"></use></svg>
 									<p>
@@ -42,7 +42,7 @@
 									</p>
 								</a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="#" class="d-flex game-left__link">
 									<svg class="icon"><use xlink:href="css/img/svg-sprite.svg#menu2"></use></svg>
 									<p>
@@ -201,7 +201,7 @@
 								</div>
 							</div>
 							<ul class="game-left__list">
-								<li class="active">
+								<li>
 									<a href="#" class="d-flex game-left__link">
 										<svg class="icon"><use xlink:href="css/img/svg-sprite.svg#menu1"></use></svg>
 										<p>
@@ -209,7 +209,7 @@
 										</p>
 									</a>
 								</li>
-								<li>
+								<li class="active">
 									<a href="#" class="d-flex game-left__link">
 										<svg class="icon"><use xlink:href="css/img/svg-sprite.svg#menu2"></use></svg>
 										<p>
@@ -384,126 +384,207 @@
 							</div>
 						</div>
 					</div>
-					<div class="game-right__flex d-flex">
-						<div class="game-right__content">
-							<div class="game-right__time">
-								<svg class="icon"><use xlink:href="css/img/svg-sprite.svg#time"></use></svg>
-								14:29
-							</div>
-							<div class="game-right__box d-flex">
-								<!-- состояния для .game-right__item: -->
-								<!-- selected - для выбранных цветов (Анимация выбора).
-									-- По истечению вермени и когда победивший цвет определен, этот класс нужно убрать -->
-								<!-- leader - для лидирующего цвета (иконка кубка) -->
-								<!-- winner - победителю (яркий цвет + анимация победы). класс leader нужно оставить для отображения кубка -->
-								<!-- loser - проигравшим цветам (сделает их бледными) -->
-
-								<div class="game-right__item selected">
-									<div class="game-right__info d-flex">
-										<div class="game-right__one">
-											<p class="game-right__usdt">USDT</p>
-											<p class="game-right__num">
-												743.096743.096743.096
-											</p>
-										</div>
-										<div class="game-right__one">
-											<p class="game-right__usdt">Bets</p>
-											<p class="game-right__num">
-												59
-											</p>
-										</div>
-										<div class="game-right__one">
-											<p class="game-right__usdt">Players</p>
-											<p class="game-right__num">
-												28
-											</p>
-										</div>
+					<div class="game-right__flex game-right__flex_history d-flex">
+						<div class="game-right__content game-right__content_faq">
+							<div class="history__box">
+								<p class="faq__title">
+									Game History
+								</p>
+								<div class="history__flex d-flex">
+									<div class="history__block">
+										<p class="history__name">Total Games</p>
+										<p class="history__text">11,145</p>
 									</div>
-									<div class="colorpick colorpick_blue">
-										<div class="colorpick__coube"></div>
+									<div class="history__block">
+										<p class="history__name">Total USDT bet</p>
+										<p class="history__text">4,569.034 USDT</p>
+									</div>
+									<div class="history__block">
+										<p class="history__name">Colors Rate</p>
+										<div class="history__wrap d-flex">
+											<div class="history__item">
+												<p class="history__text">Blue</p>
+												<p class="history__num">33%</p>
+											</div>
+											<div class="history__item">
+												<p class="history__text">Yellow</p>
+												<p class="history__num">33%</p>
+											</div>
+											<div class="history__item">
+												<p class="history__text">Red</p>
+												<p class="history__num">33%</p>
+											</div>
+										</div>
 									</div>
 								</div>
-
-								<div class="game-right__item">
-									<div class="game-right__info d-flex">
-										<div class="game-right__one">
-											<p class="game-right__usdt">USDT</p>
-											<p class="game-right__num">
-												743.096
-											</p>
-										</div>
-										<div class="game-right__one">
-											<p class="game-right__usdt">Bets</p>
-											<p class="game-right__num">
-												61
-											</p>
-										</div>
-										<div class="game-right__one">
-											<p class="game-right__usdt">Players</p>
-											<p class="game-right__num">
-												28
-											</p>
-										</div>
-									</div>
-									<div class="colorpick colorpick_yelllow">
-										<div class="colorpick__coube"></div>
-									</div>
-								</div>
-
-								<div class="game-right__item leader">
-									<div class="game-right__info d-flex">
-										<div class="game-right__one">
-											<p class="game-right__usdt">USDT</p>
-											<p class="game-right__num">
-												743.096
-											</p>
-										</div>
-										<div class="game-right__one">
-											<p class="game-right__usdt">Bets</p>
-											<p class="game-right__num">
-												27
-											</p>
-										</div>
-										<div class="game-right__one">
-											<p class="game-right__usdt">Players</p>
-											<p class="game-right__num">
-												28
-											</p>
-										</div>
-									</div>
-									<div class="colorpick colorpick_red">
-										<div class="colorpick__coube"></div>
-									</div>
-								</div>
-							</div>
-							<div class="game-right__bottom d-flex">
-								<p class="game-right__choose">Choose your color and place your bet</p>
-								<div class="game-right__colors d-flex">
-									<div class="game-right__block checked">
-										<p class="game-right__sub">Blue</p>
-										<div class="game-right__set"></div>
-									</div>
-									<div class="game-right__block">
-										<p class="game-right__sub">Yellow</p>
-										<div class="game-right__set"></div>
-									</div>
-									<div class="game-right__block">
-										<p class="game-right__sub">Red</p>
-										<div class="game-right__set"></div>
-									</div>
-								</div>
-								<div class="game-right__form">
-									<form action="#" class="game-form">
-										<div class="game__el">
-											<label>Bet Amount</label>
-											<input type="number" name="item" placeholder="15.025" class="game-form__input">
-											<p class="game-form__item">USDT</p>
-										</div>
-										<p class="game-form__max">Max: 567.567 USDT</p>
-										<button class="game-form__btn btn btn1">
-											Bet
-										</button>
-									</form>
+								<table class="profile__table scan__table adaptive-table">
+									<thead>
+										<tr class="profile__row">
+											<td class="active">Time</td>
+											<td class="active">Game</td>
+											<td class="active">Block</td>
+											<td class="active">Player</td>
+											<td class="active">Prediction</td>
+											<td class="active">Result</td>
+											<td class="active">Bet</td>
+											<td class="active">Payout</td>
+											<td class="active"></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="profile__row">
+											<td class="active" data-label="Time">15:41:56</td>
+											<td class="active" data-label="Game">1</td>
+											<td class="active" data-label="Block">13F7996GPA</td>
+											<td class="active" data-label="Player">10x9897...GT8</td>
+											<td class="active red" data-label="Prediction">RED</td>
+											<td class="active yellow" data-label="Result">YELLOW</td>
+											<td class="active" data-label="Bet">1 USDT</td>
+											<td class="active" data-label="Payout">5.00 USDT</td>
+											<td class="active" data-label="">
+												<a href="#" class="history__btn btn btn1">
+													Withdraw
+												</a>
+											</td>
+										</tr>
+										<tr class="profile__row win">
+											<td class="active" data-label="Time">15:41:56</td>
+											<td class="active" data-label="Game">68756423</td>
+											<td class="active" data-label="Block">13F7996GPA</td>
+											<td class="active" data-label="Player">10x9897...GT8</td>
+											<td class="active blue" data-label="Prediction">Blue</td>
+											<td class="active blue" data-label="Result">Blue</td>
+											<td class="active" data-label="Bet">1 USDT</td>
+											<td class="active" data-label="Payout">5.00 USDT</td>
+											<td class="active" data-label="">
+												<a href="#" class="history__btn btn btn1">
+													Withdraw
+												</a>
+											</td>
+											<td class="win__block">
+												<svg class="icon"><use xlink:href="css/img/svg-sprite.svg#crown"></use></svg>
+												WIN
+											</td>
+										</tr>
+										<tr class="profile__row">
+											<td class="active" data-label="Time">15:41:56</td>
+											<td class="active" data-label="Game">1</td>
+											<td class="active" data-label="Block">13F7996GPA</td>
+											<td class="active" data-label="Player">10x9897...GT8</td>
+											<td class="active red" data-label="Prediction">RED</td>
+											<td class="active yellow" data-label="Result">YELLOW</td>
+											<td class="active" data-label="Bet">1 USDT</td>
+											<td class="active" data-label="Payout">5.00 USDT</td>
+											<td class="active" data-label="">
+												<a href="#" class="history__btn btn btn1">
+													Withdraw
+												</a>
+											</td>
+										</tr>
+										<tr class="profile__row win">
+											<td class="active" data-label="Time">15:41:56</td>
+											<td class="active" data-label="Game">68756423</td>
+											<td class="active" data-label="Block">13F7996GPA</td>
+											<td class="active" data-label="Player">10x9897...GT8</td>
+											<td class="active blue" data-label="Prediction">Blue</td>
+											<td class="active blue" data-label="Result">Blue</td>
+											<td class="active" data-label="Bet">1 USDT</td>
+											<td class="active" data-label="Payout">5.00 USDT</td>
+											<td class="active" data-label="">
+												<a href="#" class="history__btn btn btn1">
+													Withdraw
+												</a>
+											</td>
+											<td class="win__block">
+												<svg class="icon"><use xlink:href="css/img/svg-sprite.svg#crown"></use></svg>
+												WIN
+											</td>
+										</tr>
+										<tr class="profile__row">
+											<td class="active" data-label="Time">15:41:56</td>
+											<td class="active" data-label="Game">1</td>
+											<td class="active" data-label="Block">13F7996GPA</td>
+											<td class="active" data-label="Player">10x9897...GT8</td>
+											<td class="active red" data-label="Prediction">RED</td>
+											<td class="active yellow" data-label="Result">YELLOW</td>
+											<td class="active" data-label="Bet">1 USDT</td>
+											<td class="active" data-label="Payout">5.00 USDT</td>
+											<td class="active" data-label="">
+												<a href="#" class="history__btn btn btn1">
+													Withdraw
+												</a>
+											</td>
+										</tr>
+										<tr class="profile__row">
+											<td class="active" data-label="Time">15:41:56</td>
+											<td class="active" data-label="Game">1</td>
+											<td class="active" data-label="Block">13F7996GPA</td>
+											<td class="active" data-label="Player">10x9897...GT8</td>
+											<td class="active red" data-label="Prediction">RED</td>
+											<td class="active yellow" data-label="Result">YELLOW</td>
+											<td class="active" data-label="Bet">1 USDT</td>
+											<td class="active" data-label="Payout">5.00 USDT</td>
+											<td class="active" data-label="">
+												<a href="#" class="history__btn btn btn1">
+													Withdraw
+												</a>
+											</td>
+										</tr>
+										<tr class="profile__row win">
+											<td class="active" data-label="Time">15:41:56</td>
+											<td class="active" data-label="Game">68756423</td>
+											<td class="active" data-label="Block">13F7996GPA</td>
+											<td class="active" data-label="Player">10x9897...GT8</td>
+											<td class="active blue" data-label="Prediction">Blue</td>
+											<td class="active blue" data-label="Result">Blue</td>
+											<td class="active" data-label="Bet">1 USDT</td>
+											<td class="active" data-label="Payout">5.00 USDT</td>
+											<td class="active" data-label="">
+												<a href="#" class="history__btn btn btn1">
+													Withdraw
+												</a>
+											</td>
+											<td class="win__block">
+												<svg class="icon"><use xlink:href="css/img/svg-sprite.svg#crown"></use></svg>
+												WIN
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="history-nav d-flex">
+									<a href="#" class="history-nav__first">
+										Prev
+									</a>
+									<ul class="history-nav__list d-flex">
+										<li class="history-nav__li active">
+											<a href="#">
+												1
+											</a>
+										</li>
+										<li class="history-nav__li">
+											<a href="#">
+												2
+											</a>
+										</li>
+										<li class="history-nav__li">
+											<a href="#">
+												3
+											</a>
+										</li>
+										<li class="history-nav__li">
+											<a href="#">
+												4
+											</a>
+										</li>
+										<li class="history-nav__li">
+											<a href="#">
+												5
+											</a>
+										</li>
+									</ul>
+									<a href="#" class="history-nav__last">
+										Next
+									</a>
 								</div>
 							</div>
 						</div>
