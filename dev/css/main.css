@@ -854,7 +854,7 @@ div {
   line-height: 100%;
 }
 .history__block {
-  width: 30%;
+  width: 37%;
   height: auto;
   background: #2A2A2A;
   border-radius: 5px;
@@ -869,8 +869,7 @@ div {
   margin-right: 0;
 }
 .history__flex {
-  margin: 24px 0 20px;
-  flex-wrap: wrap;
+  margin: 24px 0 11px;
 }
 .history__box {
   background: #1A1A1A;
@@ -1287,6 +1286,9 @@ div {
   padding-left: 239px;
   transition: 0.5s;
   background: linear-gradient(180deg, #2B2B2B 0%, #272727 86.25%);
+}
+.game-right__pic {
+  width: 100%;
 }
 .game-right__form {
   padding-left: 21px;
@@ -1788,6 +1790,131 @@ div {
   margin: 0 auto;
 }
 
+.colorpick {
+  position: relative;
+  display: flex;
+  align-items: end;
+  padding-bottom: 70px;
+  width: 300px;
+  height: 450px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.colorpick:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
+}
+.colorpick__coube {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: transform 0.5s ease-in-out, filter 0.5s ease;
+}
+.colorpick__coube:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 155px;
+  width: 100%;
+  height: 130px;
+  background: url(/css/img/colorpick/leader.svg) center center no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.colorpick_blue {
+  background-image: url(/css/img/colorpick/footer_blue.svg);
+}
+.colorpick_blue:before {
+  background-image: url(/css/img/colorpick/polygon_blue.svg);
+}
+.colorpick_blue .colorpick__coube {
+  background-image: url(/css/img/colorpick/coube_blue.svg);
+}
+.colorpick_yelllow {
+  background-image: url(/css/img/colorpick/footer_yellow.svg);
+}
+.colorpick_yelllow:before {
+  background-image: url(/css/img/colorpick/polygon_yellow.svg);
+}
+.colorpick_yelllow .colorpick__coube {
+  background-image: url(/css/img/colorpick/coube_yellow.svg);
+}
+.colorpick_red {
+  background-image: url(/css/img/colorpick/footer_red.svg);
+}
+.colorpick_red:before {
+  background-image: url(/css/img/colorpick/polygon_red.svg);
+}
+.colorpick_red .colorpick__coube {
+  background-image: url(/css/img/colorpick/coube_red.svg);
+}
+
+.game-right__item.selected .game-right__info {
+  transform: translateY(-20px);
+}
+.game-right__item.selected .colorpick:before {
+  transform: translateY(-20px);
+}
+.game-right__item.selected .colorpick__coube {
+  transform: translateY(-25px);
+}
+.game-right__item.selected .colorpick_blue .colorpick__coube {
+  filter: drop-shadow(0 0 25px #42E8E0);
+}
+.game-right__item.selected .colorpick_red .colorpick__coube {
+  filter: drop-shadow(0 0 25px #E8D742);
+}
+.game-right__item.selected .colorpick_yelllow .colorpick__coube {
+  filter: drop-shadow(0 0 25px #E84288);
+}
+.game-right__item.leader .colorpick__coube:before {
+  opacity: 1;
+}
+.game-right__item.loser {
+  filter: grayscale(0.5);
+}
+.game-right__item.winner {
+  filter: brightness(1.1) saturate(1.1) drop-shadow(0 0 30px gold);
+}
+.game-right__item.winner .colorpick__coube {
+  transform-origin: center bottom;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-fill-mode: bot;
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
 .header--lang {
   position: relative;
   display: flex;
@@ -2111,131 +2238,6 @@ div {
   margin-left: 14px;
 }
 
-.colorpick {
-  position: relative;
-  display: flex;
-  align-items: end;
-  padding-bottom: 70px;
-  width: 300px;
-  height: 450px;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.colorpick:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 120px;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  z-index: 1;
-  transition: transform 0.5s ease-in-out;
-}
-.colorpick__coube {
-  position: relative;
-  width: 100%;
-  height: 340px;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  transition: transform 0.5s ease-in-out, filter 0.5s ease;
-}
-.colorpick__coube:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 155px;
-  width: 100%;
-  height: 130px;
-  background: url(/css/img/colorpick/leader.svg) center center no-repeat;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.colorpick_blue {
-  background-image: url(/css/img/colorpick/footer_blue.svg);
-}
-.colorpick_blue:before {
-  background-image: url(/css/img/colorpick/polygon_blue.svg);
-}
-.colorpick_blue .colorpick__coube {
-  background-image: url(/css/img/colorpick/coube_blue.svg);
-}
-.colorpick_yelllow {
-  background-image: url(/css/img/colorpick/footer_yellow.svg);
-}
-.colorpick_yelllow:before {
-  background-image: url(/css/img/colorpick/polygon_yellow.svg);
-}
-.colorpick_yelllow .colorpick__coube {
-  background-image: url(/css/img/colorpick/coube_yellow.svg);
-}
-.colorpick_red {
-  background-image: url(/css/img/colorpick/footer_red.svg);
-}
-.colorpick_red:before {
-  background-image: url(/css/img/colorpick/polygon_red.svg);
-}
-.colorpick_red .colorpick__coube {
-  background-image: url(/css/img/colorpick/coube_red.svg);
-}
-
-.game-right__item.selected .game-right__info {
-  transform: translateY(-20px);
-}
-.game-right__item.selected .colorpick:before {
-  transform: translateY(-20px);
-}
-.game-right__item.selected .colorpick__coube {
-  transform: translateY(-25px);
-}
-.game-right__item.selected .colorpick_blue .colorpick__coube {
-  filter: drop-shadow(0 0 25px #42E8E0);
-}
-.game-right__item.selected .colorpick_red .colorpick__coube {
-  filter: drop-shadow(0 0 25px #E8D742);
-}
-.game-right__item.selected .colorpick_yelllow .colorpick__coube {
-  filter: drop-shadow(0 0 25px #E84288);
-}
-.game-right__item.leader .colorpick__coube:before {
-  opacity: 1;
-}
-.game-right__item.loser {
-  filter: grayscale(0.5);
-}
-.game-right__item.winner {
-  filter: brightness(1.1) saturate(1.1) drop-shadow(0 0 30px gold);
-}
-.game-right__item.winner .colorpick__coube {
-  transform-origin: center bottom;
-  animation-name: bounce;
-  animation-duration: 1s;
-  animation-fill-mode: bot;
-}
-
-@keyframes bounce {
-  0%, 20%, 53%, 80%, 100% {
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0, 0);
-  }
-  40%, 43% {
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -30px, 0);
-  }
-  70% {
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -15px, 0);
-  }
-  90% {
-    transform: translate3d(0, -4px, 0);
-  }
-}
 @media screen and (max-width: 1699px) {
   .about__content {
     margin-left: 40px;
@@ -2244,7 +2246,6 @@ div {
     width: 51%;
   }
   .history__block {
-    width: 31%;
     padding: 19px;
   }
 }
@@ -2623,11 +2624,11 @@ div {
     top: 0px;
     max-width: 100%;
     padding: 50px 30px;
-    height: 100vh;
     width: 100%;
-    position: absolute;
-    overflow-y: auto;
+    position: fixed;
+    overflow-y: hidden;
     overflow-x: hidden;
+    height: 100vh;
   }
   .game-left .menu {
     display: flex;
@@ -2911,7 +2912,7 @@ div {
     padding: 0;
   }
   .game-right__el {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   .game .footer__socials {
     width: auto;
@@ -3057,7 +3058,7 @@ div {
   }
   .game__btn {
     margin-right: 0;
-    margin-bottom: 26px;
+    margin-bottom: 14px;
   }
   .game-right__item {
     width: 100%;
@@ -3101,5 +3102,15 @@ div {
   }
   .game-right__flex_history .game-chat {
     flex-direction: column;
+  }
+  .game-left__link {
+    height: 30px;
+  }
+  .game-left__list li:last-child {
+    margin-top: 12px;
+    padding-top: 5px;
+  }
+  .history__flex {
+    flex-wrap: wrap;
   }
 }
