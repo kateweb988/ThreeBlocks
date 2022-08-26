@@ -1438,7 +1438,15 @@ div {
 }
 .game-right__info {
   justify-content: space-between;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+}
+.game-right__win {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 .game-right__usdt {
   font-weight: 300;
@@ -1459,6 +1467,7 @@ div {
   width: 100%;
 }
 .game-right__item {
+  position: relative;
   width: 30%;
   margin-right: 50px;
   text-align: center;
@@ -1790,6 +1799,39 @@ div {
   margin: 0 auto;
 }
 
+.win {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.win__head {
+  font-family: "Fuji";
+  font-size: 64px;
+  text-transform: uppercase;
+}
+.win__text {
+  font-size: 12px;
+}
+.win__summ {
+  font-family: "Fuji";
+  font-size: 16px;
+}
+.win__box {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.win__left {
+  text-align: left;
+}
+.win__right {
+  text-align: right;
+  color: #42E8E0;
+}
+
 .colorpick {
   position: relative;
   display: flex;
@@ -1813,7 +1855,7 @@ div {
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: 1;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease;
 }
 .colorpick__coube {
   position: relative;
@@ -1842,8 +1884,14 @@ div {
 .colorpick_blue:before {
   background-image: url(/css/img/colorpick/polygon_blue.svg);
 }
-.colorpick_blue .colorpick__coube {
-  background-image: url(/css/img/colorpick/coube_blue.svg);
+.colorpick_blue .colorpick__coube.charge_1 {
+  background-image: url(/css/img/colorpick/coube_blue_1.svg);
+}
+.colorpick_blue .colorpick__coube.charge_2 {
+  background-image: url(/css/img/colorpick/coube_blue_2.svg);
+}
+.colorpick_blue .colorpick__coube.charge_3 {
+  background-image: url(/css/img/colorpick/coube_blue_3.svg);
 }
 .colorpick_yelllow {
   background-image: url(/css/img/colorpick/footer_yellow.svg);
@@ -1851,8 +1899,14 @@ div {
 .colorpick_yelllow:before {
   background-image: url(/css/img/colorpick/polygon_yellow.svg);
 }
-.colorpick_yelllow .colorpick__coube {
-  background-image: url(/css/img/colorpick/coube_yellow.svg);
+.colorpick_yelllow .colorpick__coube.charge_1 {
+  background-image: url(/css/img/colorpick/coube_yelllow_1.svg);
+}
+.colorpick_yelllow .colorpick__coube.charge_2 {
+  background-image: url(/css/img/colorpick/coube_yelllow_2.svg);
+}
+.colorpick_yelllow .colorpick__coube.charge_3 {
+  background-image: url(/css/img/colorpick/coube_yelllow_3.svg);
 }
 .colorpick_red {
   background-image: url(/css/img/colorpick/footer_red.svg);
@@ -1860,61 +1914,70 @@ div {
 .colorpick_red:before {
   background-image: url(/css/img/colorpick/polygon_red.svg);
 }
-.colorpick_red .colorpick__coube {
-  background-image: url(/css/img/colorpick/coube_red.svg);
+.colorpick_red .colorpick__coube.charge_1 {
+  background-image: url(/css/img/colorpick/coube_red_1.svg);
+}
+.colorpick_red .colorpick__coube.charge_2 {
+  background-image: url(/css/img/colorpick/coube_red_2.svg);
+}
+.colorpick_red .colorpick__coube.charge_3 {
+  background-image: url(/css/img/colorpick/coube_red_3.svg);
 }
 
-.game-right__item.selected .game-right__info {
+.game-right__item_selected .game-right__info, .game-right__item.winner .game-right__info, .game-right__item.selected .game-right__info {
   transform: translateY(-20px);
 }
-.game-right__item.selected .colorpick:before {
+.game-right__item_selected .colorpick:before, .game-right__item.winner .colorpick:before, .game-right__item.selected .colorpick:before {
   transform: translateY(-20px);
 }
-.game-right__item.selected .colorpick__coube {
+.game-right__item_selected .colorpick__coube, .game-right__item.winner .colorpick__coube, .game-right__item.selected .colorpick__coube {
   transform: translateY(-25px);
 }
-.game-right__item.selected .colorpick_blue .colorpick__coube {
+.game-right__item_selected .colorpick_blue .colorpick__coube, .game-right__item.winner .colorpick_blue .colorpick__coube, .game-right__item.selected .colorpick_blue .colorpick__coube {
   filter: drop-shadow(0 0 25px #42E8E0);
 }
-.game-right__item.selected .colorpick_red .colorpick__coube {
-  filter: drop-shadow(0 0 25px #E8D742);
-}
-.game-right__item.selected .colorpick_yelllow .colorpick__coube {
+.game-right__item_selected .colorpick_red .colorpick__coube, .game-right__item.winner .colorpick_red .colorpick__coube, .game-right__item.selected .colorpick_red .colorpick__coube {
   filter: drop-shadow(0 0 25px #E84288);
 }
+.game-right__item_selected .colorpick_yelllow .colorpick__coube, .game-right__item.winner .colorpick_yelllow .colorpick__coube, .game-right__item.selected .colorpick_yelllow .colorpick__coube {
+  filter: drop-shadow(0 0 25px #E8D742);
+}
+
 .game-right__item.leader .colorpick__coube:before {
   opacity: 1;
 }
 .game-right__item.loser {
-  filter: grayscale(0.5);
+  filter: grayscale(0.3);
+}
+.game-right__item.loser .colorpick:before {
+  opacity: 0;
+}
+.game-right__item.loser .game-right__info {
+  opacity: 0;
+}
+.game-right__item.loser .game-right__info {
+  transform: translateY(0);
+}
+.game-right__item.loser .colorpick:before {
+  transform: translateY(0);
+}
+.game-right__item.loser .colorpick .colorpick__coube {
+  transform: translateY(0);
+  filter: none;
 }
 .game-right__item.winner {
-  filter: brightness(1.1) saturate(1.1) drop-shadow(0 0 30px gold);
+  filter: brightness(1.1) saturate(1.1);
 }
-.game-right__item.winner .colorpick__coube {
-  transform-origin: center bottom;
-  animation-name: bounce;
-  animation-duration: 1s;
-  animation-fill-mode: bot;
+.game-right__item.winner .colorpick__coube:before {
+  opacity: 1;
+}
+.game-right__item.winner .game-right__info {
+  opacity: 0;
+}
+.game-right__item.winner .game-right__win {
+  opacity: 1;
 }
 
-@keyframes bounce {
-  0%, 20%, 53%, 80%, 100% {
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0, 0);
-  }
-  40%, 43% {
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -30px, 0);
-  }
-  70% {
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -15px, 0);
-  }
-  90% {
-    transform: translate3d(0, -4px, 0);
-  }
-}
 .header--lang {
   position: relative;
   display: flex;
