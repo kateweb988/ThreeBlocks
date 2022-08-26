@@ -1799,78 +1799,84 @@ td[data-label=""] {
   margin: 0 auto;
 }
 
-.win {
+.wingame {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   line-height: 1;
 }
-.win__head {
+.wingame__head {
   font-family: "Fuji";
   font-size: 64px;
   text-transform: uppercase;
 }
-.win__text {
+.wingame__text {
   font-size: 12px;
 }
-.win__summ {
+.wingame__summ {
   font-family: "Fuji";
   font-size: 16px;
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.win__box {
+.wingame__box {
   padding: 0 10px;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.win__left, .win__right {
+.wingame__left, .wingame__right {
   max-width: 100%;
 }
-.win__left {
+.wingame__left {
   text-align: left;
 }
-.win__right {
+.wingame__right {
   text-align: right;
   color: #42E8E0;
 }
 @media screen and (max-width: 1599px) {
-  .win__head {
+  .wingame__head {
     font-size: 45px;
   }
-  .win__summ {
+  .wingame__summ {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1320px) {
-  .win__head {
+  .wingame__head {
     font-size: 35px;
   }
-  .win__summ {
+  .wingame__summ {
     font-size: 14px;
   }
-  .win__text {
+  .wingame__text {
     font-size: 10px;
   }
-  .win__summ {
+  .wingame__summ {
     font-size: 11px;
   }
 }
 @media screen and (max-width: 768px) {
-  .win__box {
+  .wingame__box {
     flex-direction: column;
   }
-  .win__left, .win__right {
+  .wingame__left, .wingame__right {
     padding-top: 8px;
     text-align: center;
   }
 }
 @media screen and (max-width: 576px) {
-  .win__head {
+  .wingame__head {
     font-size: 18px;
+  }
+  .wingame_win {
+    padding-top: 70px;
+  }
+  .wingame_you-win {
+    padding-top: 20px;
   }
 }
 
