@@ -391,12 +391,37 @@
 								14:29
 							</div>
 							<div class="game-right__box d-flex">
+
+								<!-- Если во время работы картинки будут заметно подгружаться,
+									то можно попробовать добавить эти линки для предзагрузки: -->
+								<!-- <link rel="prefetch prerender" href="/css/img/colorpick/coube_blue_1.svg" />
+								<link rel="prefetch prerender" href="/css/img/colorpick/coube_blue_2.svg" />
+								<link rel="prefetch prerender" href="/css/img/colorpick/coube_blue_3.svg" />
+								<link rel="prefetch prerender" href="/css/img/colorpick/coube_yelllow_1.svg" />
+								<link rel="prefetch prerender" href="/css/img/colorpick/coube_yelllow_2.svg" />
+								<link rel="prefetch prerender" href="/css/img/colorpick/coube_yelllow_3.svg" />
+								<link rel="prefetch prerender" href="/css/img/colorpick/coube_red_1.svg" />
+								<link rel="prefetch prerender" href="/css/img/colorpick/coube_red_2.svg" />
+								<link rel="prefetch prerender" href="/css/img/colorpick/coube_red_3.svg" /> -->
+
+
 								<!-- состояния для .game-right__item: -->
 								<!-- selected - для выбранных цветов (Анимация выбора).
 									-- По истечению вермени и когда победивший цвет определен, этот класс нужно убрать -->
 								<!-- leader - для лидирующего цвета (иконка кубка) -->
-								<!-- winner - победителю (яркий цвет + анимация победы). класс leader нужно оставить для отображения кубка -->
-								<!-- loser - проигравшим цветам (сделает их бледными) -->
+								<!-- winner - победителю (яркий цвет + анимация победы + блок "WIN") -->
+								<!-- loser - проигравшим цветам (сделает их бледными, скроет информацию) -->
+
+								<!-- Состояния для colorpick__coube (олновременно может быть только 1 класс из трех): -->
+								<!-- charge_1 - один ряд "кубиков" -->
+								<!-- charge_2 - два ряда -->
+								<!-- charge_3 - три ряда -->
+
+								<!-- блок game-right__win
+								  -- В нем два блока win
+								  -- Первый для победившего блока, если на него не сделана ставка
+								  -- Второй для победившего блока, на который сделана става (победа игрока) -->
+
 
 								<div class="game-right__item selected">
 									<div class="game-right__info d-flex">
@@ -419,8 +444,28 @@
 											</p>
 										</div>
 									</div>
+									<div class="game-right__win">
+										<div class="win">
+											<div class="win__head">Win</div>
+											<div class="win__text">Total Winnings</div>
+											<div class="win__summ">496.1068 USDT</div>
+										</div>
+										<div class="win">
+											<div class="win__head">You won!</div>
+											<div class="win__box">
+												<div class="win__left">
+													<div class="win__text">Total Winnings</div>
+													<div class="win__summ">496.1068 USDT</div>
+												</div>
+												<div class="win__right">
+													<div class="win__text">Your Winnings</div>
+													<div class="win__summ">25.1068 USDT</div>
+												</div>
+											</div>
+										</div>
+									</div>
 									<div class="colorpick colorpick_blue">
-										<div class="colorpick__coube"></div>
+										<div class="colorpick__coube charge_2"></div>
 									</div>
 								</div>
 
@@ -445,8 +490,28 @@
 											</p>
 										</div>
 									</div>
+									<div class="game-right__win">
+										<div class="win">
+											<div class="win__head">WIN</div>
+											<div class="win__text">Total Winnings</div>
+											<div class="win__summ">496.1068 USDT</div>
+										</div>
+										<div class="win">
+											<div class="win__head">You won!</div>
+											<div class="win__box">
+												<div class="win__left">
+													<div class="win__text">Total Winnings</div>
+													<div class="win__summ">496.1068 USDT</div>
+												</div>
+												<div class="win__right">
+													<div class="win__text">Your Winnings</div>
+													<div class="win__summ">25.1068 USDT</div>
+												</div>
+											</div>
+										</div>
+									</div>
 									<div class="colorpick colorpick_yelllow">
-										<div class="colorpick__coube"></div>
+										<div class="colorpick__coube charge_3"></div>
 									</div>
 								</div>
 
@@ -471,8 +536,28 @@
 											</p>
 										</div>
 									</div>
+									<div class="game-right__win">
+										<div class="win">
+											<div class="win__head">WIN</div>
+											<div class="win__text">Total Winnings</div>
+											<div class="win__summ">496.1068 USDT</div>
+										</div>
+										<div class="win">
+											<div class="win__head">You won!</div>
+											<div class="win__box">
+												<div class="win__left">
+													<div class="win__text">Total Winnings</div>
+													<div class="win__summ">496.1068 USDT</div>
+												</div>
+												<div class="win__right">
+													<div class="win__text">Your Winnings</div>
+													<div class="win__summ">25.1068 USDT</div>
+												</div>
+											</div>
+										</div>
+									</div>
 									<div class="colorpick colorpick_red">
-										<div class="colorpick__coube"></div>
+										<div class="colorpick__coube charge_1"></div>
 									</div>
 								</div>
 							</div>
