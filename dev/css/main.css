@@ -1033,7 +1033,6 @@ div {
 .profile__row {
   border-collapse: separate;
   border-spacing: inherit;
-  background: #FFFFFF;
   margin-bottom: 15px;
 }
 .profile__row td:nth-child(1) {
@@ -1098,9 +1097,6 @@ div {
 .scan__table thead td:last-child {
   border-radius: 0px 5px 0 0px !important;
 }
-.scan__table tbody tr:last-child {
-  background: #fff;
-}
 .scan__table tbody tr:last-child td:first-child {
   border-radius: 0px 0 0 5px;
   border: 0.5px solid #2A2A2A;
@@ -1138,6 +1134,10 @@ div {
   .history__box.not-connect .not-connect__block {
     top: 34%;
   }
+}
+
+td[data-label=""] {
+  border-right: 0.5px solid #2A2A2A;
 }
 
 .body-game {

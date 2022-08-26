@@ -509,7 +509,6 @@
 .profile__row
    border-collapse: separate
    border-spacing: inherit
-   background: #FFFFFF
    margin-bottom: 15px
    td:nth-child(1)
       padding-left: 24px
@@ -546,9 +545,8 @@
          &:first-child
             border-radius: 5px 0 0 0px !important
          &:last-child
-            border-radius: 00px 5px 0 0px !important
+            border-radius: 0px 5px 0 0px !important
    tbody tr:last-child
-      background: #fff
       td:first-child
          border-radius: 0px 0 0 5px
          border: 0.5px solid #2A2A2A
@@ -580,3 +578,5 @@
       @media screen and (max-width: 767px)
          .not-connect__block
             top: 34%
+td[data-label=""]
+   border-right: 0.5px solid #2A2A2A
