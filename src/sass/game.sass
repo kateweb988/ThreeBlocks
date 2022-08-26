@@ -565,16 +565,47 @@
     &__summ
         font-family: 'Fuji'
         font-size: 16px
+        width: 100%
+        overflow: hidden
+        text-overflow: ellipsis
     &__box
         padding: 0 10px
         display: flex
         justify-content: space-around
         width: 100%
+    &__left,
+    &__right
+        max-width: 100%
     &__left
         text-align: left
     &__right
         text-align: right
         color: #42E8E0
+    @media screen and (max-width:1599px)
+        &__head
+            font-size: 45px
+        &__summ
+            font-size: 14px
+    @media screen and (max-width:1320px)
+        &__head
+            font-size: 35px
+        &__summ
+            font-size: 14px
+        &__text
+            font-size: 10px
+        &__summ
+            font-size: 11px
+    @media screen and (max-width:768px)
+        &__box
+            flex-direction: column
+        &__left,
+        &__right
+            padding-top: 8px
+            text-align: center
+    @media screen and (max-width:576px)
+        &__head
+            font-size: 18px
+
 
 .colorpick
     position: relative
@@ -582,6 +613,7 @@
     align-items: end
     padding-bottom: 70px
     width: 300px
+    max-width: 100%
     height: 450px
     background-position: bottom center
     background-repeat: no-repeat
@@ -616,6 +648,7 @@
             width: 100%
             height: 130px
             background: url(/css/img/colorpick/leader.svg) center center no-repeat
+            background-size: contain
             opacity: 0
             transition: opacity .3s
     &_blue
@@ -654,6 +687,51 @@
                     background-image: url(/css/img/colorpick/coube_red_2.svg)
                 &.charge_3
                     background-image: url(/css/img/colorpick/coube_red_3.svg)
+
+    @media screen and (max-width:1599px)
+        margin: 0 auto
+        padding-bottom: 57px
+        height: 360px
+        &:before
+            top: -25px
+        &__coube
+            &:before
+                top: 192px
+                height: 106px
+
+    @media screen and (max-width:1320px)
+        padding-bottom: 45px
+        width: 189px
+        height: 280px
+        &:before
+            top: -50px
+        &__coube
+            &:before
+                top: 218px
+                height: 85px
+
+    @media screen and (max-width:768px)
+        padding-bottom: 41px
+        width: 160px
+        height: 243px
+        &:before
+            top: -56px
+        &__coube
+            &:before
+                top: 238px
+                height: 70px
+
+    @media screen and (max-width: 576px)
+        padding-bottom: 21px
+        width: 100%
+        height: 125px
+        &:before
+            top: -90px
+        &__coube
+            &:before
+                top: 286px
+                height: 37px
+
 
 .game-right__item_selected
     .game-right__info
