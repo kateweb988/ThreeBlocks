@@ -1799,37 +1799,85 @@ td[data-label=""] {
   margin: 0 auto;
 }
 
-.win {
+.wingame {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   line-height: 1;
 }
-.win__head {
+.wingame__head {
   font-family: "Fuji";
   font-size: 64px;
   text-transform: uppercase;
 }
-.win__text {
+.wingame__text {
   font-size: 12px;
 }
-.win__summ {
+.wingame__summ {
   font-family: "Fuji";
   font-size: 16px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.win__box {
+.wingame__box {
   padding: 0 10px;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.win__left {
+.wingame__left, .wingame__right {
+  max-width: 100%;
+}
+.wingame__left {
   text-align: left;
 }
-.win__right {
+.wingame__right {
   text-align: right;
   color: #42E8E0;
+}
+@media screen and (max-width: 1599px) {
+  .wingame__head {
+    font-size: 45px;
+  }
+  .wingame__summ {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .wingame__head {
+    font-size: 35px;
+  }
+  .wingame__summ {
+    font-size: 14px;
+  }
+  .wingame__text {
+    font-size: 10px;
+  }
+  .wingame__summ {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wingame__box {
+    flex-direction: column;
+  }
+  .wingame__left, .wingame__right {
+    padding-top: 8px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wingame__head {
+    font-size: 18px;
+  }
+  .wingame_win {
+    padding-top: 70px;
+  }
+  .wingame_you-win {
+    padding-top: 20px;
+  }
 }
 
 .colorpick {
@@ -1838,6 +1886,7 @@ td[data-label=""] {
   align-items: end;
   padding-bottom: 70px;
   width: 300px;
+  max-width: 100%;
   height: 450px;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -1875,6 +1924,7 @@ td[data-label=""] {
   width: 100%;
   height: 130px;
   background: url(/css/img/colorpick/leader.svg) center center no-repeat;
+  background-size: contain;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -1922,6 +1972,62 @@ td[data-label=""] {
 }
 .colorpick_red .colorpick__coube.charge_3 {
   background-image: url(/css/img/colorpick/coube_red_3.svg);
+}
+@media screen and (max-width: 1599px) {
+  .colorpick {
+    margin: 0 auto;
+    padding-bottom: 57px;
+    height: 360px;
+  }
+  .colorpick:before {
+    top: -25px;
+  }
+  .colorpick__coube:before {
+    top: 192px;
+    height: 106px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .colorpick {
+    padding-bottom: 45px;
+    width: 189px;
+    height: 280px;
+  }
+  .colorpick:before {
+    top: -50px;
+  }
+  .colorpick__coube:before {
+    top: 218px;
+    height: 85px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .colorpick {
+    padding-bottom: 41px;
+    width: 160px;
+    height: 243px;
+  }
+  .colorpick:before {
+    top: -56px;
+  }
+  .colorpick__coube:before {
+    top: 238px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .colorpick {
+    padding-bottom: 21px;
+    width: 100%;
+    height: 125px;
+  }
+  .colorpick:before {
+    top: -90px;
+  }
+  .colorpick__coube:before {
+    top: 286px;
+    height: 37px;
+  }
 }
 
 .game-right__item_selected .game-right__info, .game-right__item.winner .game-right__info, .game-right__item.selected .game-right__info {
@@ -2353,6 +2459,10 @@ td[data-label=""] {
   .history__box {
     padding: 30px 20px 90px;
   }
+  .game-right__one:nth-child(2) .game-right__num {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 @media screen and (max-width: 1499px) {
   .about__pic {
@@ -2409,8 +2519,8 @@ td[data-label=""] {
     font-size: 14px;
   }
   .game-right__one:nth-child(2) .game-right__num {
-    font-size: 61px;
-    line-height: 51px;
+    font-size: 45px;
+    line-height: 45px;
   }
   .game-right__block {
     width: 64px;
@@ -2570,20 +2680,23 @@ td[data-label=""] {
     max-width: 290px;
   }
   .game-right__item .game-right__info {
-    flex-direction: column;
-  }
-  .game-right__one {
-    text-align: center !important;
-    margin-bottom: 10px !important;
+    flex-wrap: wrap;
+    width: 170px;
+    margin: 0 auto;
   }
   .game-right__one:nth-child(1) {
+    max-width: 50%;
     order: 2;
+    text-align: left;
   }
   .game-right__one:nth-child(3) {
+    max-width: 50%;
     order: 3;
     margin-bottom: 0 !important;
+    text-align: right;
   }
   .game-right__one:nth-child(2) {
+    width: 100%;
     order: 1;
   }
   .game-right__one:first-child .game-right__num {
@@ -2628,6 +2741,9 @@ td[data-label=""] {
   }
   .profile__table tr {
     border-bottom: none;
+  }
+  .game-right__win {
+    top: 0;
   }
 }
 @media (max-width: 991px) {
@@ -3123,12 +3239,12 @@ td[data-label=""] {
     margin-right: 0;
     margin-bottom: 14px;
   }
-  .game-right__item {
-    width: 100%;
-    margin-right: 0;
-  }
   .game-right__box {
-    padding: 0 10px;
+    justify-content: space-evenly;
+  }
+  .game-right__item {
+    width: 84px;
+    margin-right: 0;
   }
   .game-chat {
     flex-direction: column;
@@ -3175,5 +3291,32 @@ td[data-label=""] {
   }
   .history__flex {
     flex-wrap: wrap;
+  }
+  .game-right__item .game-right__info {
+    width: 100%;
+    flex-direction: column;
+  }
+  .game-right__one:nth-child(1), .game-right__one:nth-child(2), .game-right__one:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .game-right__one:last-child .game-right__num {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .game-right__usdt {
+    font-size: 10px;
+  }
+  .game-right__num {
+    font-size: 12px;
+  }
+  .game-right__one:nth-child(2) .game-right__num {
+    font-size: 40px;
   }
 }

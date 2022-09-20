@@ -1,10 +1,9 @@
-@media screen and (max-width: 1699px) 
+@media screen and (max-width: 1699px)
    .about__content
       margin-left: 40px
    .about__pic
       width: 51%
    .history__block
-      // width: 31%
       padding: 19px
 @media only screen and (max-height: 750px)
    .header__box
@@ -13,12 +12,12 @@
       width: 70%
       right: -309px
       top: -95px
-@media only screen and (max-height: 750px) and (max-width: 1400px) 
+@media only screen and (max-height: 750px) and (max-width: 1400px)
    .header__bg
       right: -322px !important
    .header
       padding-bottom: 100px
-@media screen and (max-width: 1599px) 
+@media screen and (max-width: 1599px)
    .game-right__content
       max-width: 800px
    .game-right__item
@@ -29,50 +28,54 @@
       width: 95px
    .game-right__content_faq
       max-width: 100%
-   .history__item 
+   .history__item
       margin-right: 12px
       margin-bottom: 2px
    .history__box
       padding: 30px 20px 90px
-@media screen and (max-width: 1499px) 
+   .game-right__one:nth-child(2)
+      .game-right__num
+         font-size: 50px
+         line-height: 50px
+@media screen and (max-width: 1499px)
    .about__pic
       width: 46%
    .game-right__content
       padding: 31px 20px 20px
    .game-right__choose
       font-size: 21px
-   .history__btn 
+   .history__btn
       width: 90px
-@media screen and (max-width: 1399px) 
+@media screen and (max-width: 1399px)
    .about__content
       max-width: 589px
    .features__item
       margin-right: 139px
-   .header__bg 
+   .header__bg
       right: -646px
    .adaptive-table td
       font-size: 11px
-@media screen and (max-width: 1299px) 
-   .features__item 
+@media screen and (max-width: 1299px)
+   .features__item
       margin-right: 84px
-   .play__pic 
+   .play__pic
       width: 55%
       margin-right: 40px
-   .chat__pic 
+   .chat__pic
       margin-left: 40px
-   .chat__content 
+   .chat__content
       max-width: 702px
    .footer .nav__list
       left: 42px
-   .play__content 
+   .play__content
       top: 10px
-   .header__bg 
+   .header__bg
       right: -741px
    .game-right__num
       font-size: 14px
-   .game-right__one:nth-child(2) .game-right__num 
-      font-size: 61px
-      line-height: 51px
+   .game-right__one:nth-child(2) .game-right__num
+      font-size: 45px
+      line-height: 45px
    .game-right__block
       width: 64px
    .game-right__flex_history
@@ -91,12 +94,12 @@
          max-height: 409px
       .game-chat__history
          max-width: 290px
-@media screen and (max-width: 1199px) 
+@media screen and (max-width: 1199px)
    .about__box
       flex-direction: column
    .about__pic
       width: auto
-   .about__content 
+   .about__content
       max-width: 100%
       margin-left: 0
       top: -30px
@@ -117,23 +120,23 @@
       max-width: 100%
    .chat__box
       flex-direction: column-reverse
-   .chat__pic 
+   .chat__pic
       margin-left: 0
       margin-bottom: 25px
-   .chat__content 
+   .chat__content
       max-width: 100%
-   .footer .nav__list 
+   .footer .nav__list
       left: 0
       margin-top: 34px
    .footer .nav__box
       flex-direction: column
    .footer__socials
       margin-top: 40px
-   .footer 
+   .footer
       padding: 53px 0 44px
    .header__box
       margin-top: 118px
-   .header 
+   .header
       background-size: cover
    .nav__box .nav__link
       margin-right: 20px
@@ -144,7 +147,7 @@
       width: 100%
       right: -395px
       top: -128px
-   .game-right__content 
+   .game-right__content
       max-width: 100%
    .game-right__bottom
       flex-direction: column
@@ -188,22 +191,27 @@
    .game-chat__history
       max-width: 290px
    .game-right__item .game-right__info
-      flex-direction: column
+      flex-wrap: wrap
+      width: 170px
+      margin: 0 auto
    .game-right__one
-      text-align: center !important
-      margin-bottom: 10px !important
       &:nth-child(1)
+         max-width: 50%
          order: 2
+         text-align: left
       &:nth-child(3)
+         max-width: 50%
          order: 3
          margin-bottom: 0 !important
+         text-align: right
       &:nth-child(2)
+         width: 100%
          order: 1
    .game-right__one:first-child .game-right__num
       max-width: 100%
    .game-right__content_faq
       margin: 0 !important
-   .history__block 
+   .history__block
       width: 31.3%
    .adaptive-table tr td:last-child
       width: 100%
@@ -230,6 +238,8 @@
       margin-left: -30px
    .profile__table tr
       border-bottom: none
+   .game-right__win
+      top: 0
 @media ( max-width: 991px )
    .nav .nav__list
       max-width: 330px
@@ -251,10 +261,10 @@
       margin-left: 0
    .game-left__list, .game-left__footer
       display: none
-   .game__box 
+   .game__box
       flex-direction: column
    .game-left
-      .burger 
+      .burger
          position: fixed
          flex-direction: column
          right: -150%
@@ -271,23 +281,23 @@
             background: transparent
          .game-left__list
             display: block !important
-      .burger.active 
+      .burger.active
          right: 0px
          top: 0px
          max-width: 100%
-         padding: 50px 30px 
+         padding: 50px 30px
          width: 100%
          position: fixed
          overflow-y: hidden
          overflow-x: hidden
          height: 100vh
-      .menu 
+      .menu
          display: flex
          position: absolute
          top: 40px
          right: 29px
          width: 40px
-      .menu .button 
+      .menu .button
          position: relative
          display: flex
          z-index: 100
@@ -298,11 +308,11 @@
          align-items: center
          justify-content: center
          margin-left: auto
-      .menu .button.active 
+      .menu .button.active
          position: fixed
          right: 15px
          top: 38px
-      .menu .button span 
+      .menu .button span
          position: absolute
          top: calc(50% - 1px)
          transition: .3s ease-in-out
@@ -310,7 +320,7 @@
          height: 3px
          border-radius: 1px
          background-color: $green
-      .menu .button span::before 
+      .menu .button span::before
          content: ''
          position: absolute
          top: -8px
@@ -319,7 +329,7 @@
          height: 3px
          border-radius: 1px
          background-color: $green
-      .menu .button span::after 
+      .menu .button span::after
          content: ''
          position: absolute
          bottom: -8px
@@ -328,15 +338,15 @@
          height: 3px
          border-radius: 1px
          background-color: $green
-      .menu .button.active span 
+      .menu .button.active span
          background-color: transparent !important
          width: 24px
-      .menu .button.active span::before 
+      .menu .button.active span::before
          content: ''
          width: 24px
          top: calc(50% - 2px)
          transform: rotate(45deg)
-      .menu .button.active span::after 
+      .menu .button.active span::after
          content: ''
          bottom: calc(50% - 1px)
          transform: rotate(-44deg)
@@ -350,7 +360,7 @@
       max-width: 100%
    .game-right__bottom
       padding-bottom: 30px
-   .game__footer 
+   .game__footer
       display: flex
       width: 100%
       padding: 40px 20px 20px
@@ -366,12 +376,12 @@
       margin-top: auto
    .game-chat__scroll
       height: 287px
-   .not-connect__block 
+   .not-connect__block
       top: 51%
    .adaptive-table tr
       width: 45.6%
 @media screen and (max-width: 767px)
-   .burger 
+   .burger
       position: fixed
       flex-direction: column
       right: -150%
@@ -383,19 +393,19 @@
       width: auto
       height: auto
       background-color: #000c28
-   .burger.active 
+   .burger.active
       right: 0px
       top: 0px
       max-width: 100%
       padding: 70px 30px
       height: 100vh
       width: 100%
-   .menu 
+   .menu
       display: flex
       position: relative
       top: -24px
       right: 0px
-   .menu .button 
+   .menu .button
       position: relative
       display: flex
       z-index: 1000000
@@ -406,11 +416,11 @@
       align-items: center
       justify-content: center
       margin-left: auto
-   .menu .button.active 
+   .menu .button.active
       position: fixed
       right: 15px
       top: 38px
-   .menu .button span 
+   .menu .button span
       position: absolute
       top: calc(50% - 1px)
       transition: .3s  ease-in-out
@@ -418,7 +428,7 @@
       height: 3px
       border-radius: 1px
       background-color: $green
-   .menu .button span::before 
+   .menu .button span::before
       content: ''
       position: absolute
       top: -8px
@@ -427,7 +437,7 @@
       height: 3px
       border-radius: 1px
       background-color: $green
-   .menu .button span::after 
+   .menu .button span::after
       content: ''
       position: absolute
       bottom: -8px
@@ -436,57 +446,57 @@
       height: 3px
       border-radius: 1px
       background-color: $green
-   .menu .button.active span 
+   .menu .button.active span
       background-color: transparent !important
       width: 24px
-   .menu .button.active span::before 
+   .menu .button.active span::before
       content: ''
       width: 24px
       top: calc(50% - 2px)
       transform: rotate(45deg)
-   .menu .button.active span::after 
+   .menu .button.active span::after
       content: ''
       bottom: calc(50% - 1px)
       transform: rotate(-44deg)
       background-color: $green
       width: 24px
    .nav__box
-      .nav__list, .nav__btn 
+      .nav__list, .nav__btn
          display: none
-   .footer .nav__list 
+   .footer .nav__list
       display: block
       text-align: center
-      li 
+      li
          margin-bottom: 20px
-         a 
+         a
             font-size: 16px
          &:last-child
             margin-bottom: 0
    .burger
-      .nav__btn 
+      .nav__btn
          margin: 20px auto 0
          width: 160px
-      .nav__list 
-         flex-direction: column 
+      .nav__list
+         flex-direction: column
          text-align: center
          max-width: 100%
-         li 
+         li
             margin-bottom: 20px
-            a 
+            a
                margin-right: 0
    .header__box
       margin-top: 40px
-   h1 
+   h1
       font-size: 48px
       line-height: 109%
-      span 
+      span
          font-size: 55px
-   .header__text 
+   .header__text
       max-width: 470px
       margin-top: 36px
    .about
       padding: 70px 0 40px
-   h2 
+   h2
       font-size: 44px
    .accordeon__button
       padding: 24px 50px 29px 20px
@@ -497,13 +507,13 @@
       font-size: 14px
    .about__pic
       width: 100%
-   .header__bg 
+   .header__bg
       width: 100%
       right: -264px
       top: -59px
    .game-chat__history, .game-chat__chat
       max-width: 41%
-   .chat__name 
+   .chat__name
       font-size: 11px
    .burger .game-right__top
       flex-direction: column
@@ -519,11 +529,11 @@
       margin-top: auto
    .game-chat__scroll
       height: 287px
-   .game-right__item 
+   .game-right__item
       margin-right: 23px
    .game-right__one:nth-child(2) .game-right__num
       font-size: 50px
-   .history__block 
+   .history__block
       width: 30.6%
       padding: 15px
       text-align: center
@@ -536,12 +546,12 @@
       margin: 0 0 15px
    .scan__table tbody tr td:last-child
       border-right: none
-   .history__box 
+   .history__box
       padding: 30px 20px 40px
-   .game-right__flex_history .game-chat__history, .game-right__flex_history .game-chat__chat 
+   .game-right__flex_history .game-chat__history, .game-right__flex_history .game-chat__chat
       max-width: 41%
 @media screen and (max-width: 576px)
-   input, textarea, select 
+   input, textarea, select
       -webkit-appearance: none
       -moz-appearance: none
       appearance: none
@@ -549,27 +559,27 @@
       top: -25px
    .header__box
       margin-top: 20px
-   h1 
+   h1
       font-size: 42px
-      span 
+      span
          font-size: 45px
-   .header 
+   .header
       background: transparent
       padding-bottom: 79px
    .about__content
       top: -2px
    .about__text, .play__text
       font-size: 13px
-   h2 
+   h2
       margin-bottom: 15px
       font-size: 41px
    .features__box
       margin-top: 50px
-   .features__pic 
+   .features__pic
       width: 100%
-   .features 
+   .features
       padding: 20px 0 40px
-   .play__name 
+   .play__name
       font-size: 39px
       margin-bottom: 29px
    .play__btn
@@ -577,22 +587,22 @@
    .chat__pic
       width: 100%
       margin-top: 30px
-   .accordeon__button 
+   .accordeon__button
       padding: 24px 46px 24px 20px
    .footer__link
       margin-left: 0
       margin-top: 5px
-   .footer__socials 
+   .footer__socials
       width: 100%
       justify-content: space-between
       flex-wrap: wrap
-   .header__bg 
+   .header__bg
       display: none
    .game-left .burger
       right: -254%
    .game-left
       padding: 10px
-   .game__logo 
+   .game__logo
       position: relative
       top: 3px
    .game-left .menu
@@ -614,24 +624,24 @@
    .game__btn
       margin-right: 0
       margin-bottom: 14px
-   .game-right__item
-      width: 100%
-      margin-right: 0
    .game-right__box
-      padding: 0 10px
+      justify-content: space-evenly
+   .game-right__item
+      width: 84px
+      margin-right: 0
    .game-chat
       flex-direction: column
    .game-chat__history, .game-chat__chat
       max-width: 100% !important
-   .game-chat__scroll 
+   .game-chat__scroll
       height: 248px
    .not-connect__block p
       font-size: 23px
-   .burger.active 
+   .burger.active
       padding: 20px !important
    .accordeon-faq .accordeon__button
       padding: 20px 40px 20px 20px
-   .faq__title 
+   .faq__title
       font-size: 23px
       line-height: 27px
       margin-left: 20px
@@ -640,15 +650,38 @@
    .history__block
       width: 100%
       margin: 0 0 10px !important
-   .game-right__flex_history .game-chat__history, .game-right__flex_history .game-chat__chat 
+   .game-right__flex_history .game-chat__history, .game-right__flex_history .game-chat__chat
       max-width: 41%
    .game-right__flex_history .game-chat
       flex-direction: column
    .game-left__link
       height: 30px
-   .game-left__list li:last-child 
+   .game-left__list li:last-child
       margin-top: 12px
       padding-top: 5px
-   .history__flex 
+   .history__flex
       flex-wrap: wrap
+   .game-right__item .game-right__info
+      width: 100%
+      flex-direction: column
+   .game-right__one
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3)
+         display: flex
+         flex-direction: column
+         justify-content: center
+         width: 100%
+         max-width: 100%
+         margin-bottom: 5px
+         text-align: center
+   .game-right__one:last-child .game-right__num
+      max-width: 100%
 
+@media screen and (max-width: 425px)
+   .game-right__usdt
+      font-size: 10px
+   .game-right__num
+      font-size: 12px
+   .game-right__one:nth-child(2) .game-right__num
+      font-size: 40px
