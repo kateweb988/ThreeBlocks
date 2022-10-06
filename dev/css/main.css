@@ -470,6 +470,9 @@ div {
   width: 160px;
   height: 30px;
 }
+.nav__logoimage {
+  width: 180px;
+}
 
 .about {
   padding: 140px 0 70px;
