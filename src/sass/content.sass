@@ -580,3 +580,44 @@
             top: 34%
 td[data-label=""]
    border-right: 0.5px solid #2A2A2A
+// NEW //
+.trans 
+   &__hash 
+      font-weight: 300
+      font-size: 13px
+      line-height: 100%
+      color: #FFFFFF
+      border-bottom: 1px solid #FFFFFF
+      width: max-content
+      transition: border 0.5s, color 0.5s
+      &:hover 
+         border-bottom: 1px solid #42E8E0
+   &__flex 
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 17px
+   &__sort
+      align-items: center
+   &__link 
+      font-weight: 300
+      font-size: 13px
+      line-height: 100%
+      color: #FFFFFF
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 115px
+      height: 20px
+      background: transparent
+      border-radius: 3px
+      margin-left: 5px
+      transition: color 0.5s, border 0.5s, background 0.5s
+      &.active 
+         background: #fff
+         color: #191919
+         border: 1px solid transparent
+         &:hover 
+            border: 1px solid #fff
+            color: #fff
+            background: transparent
+
