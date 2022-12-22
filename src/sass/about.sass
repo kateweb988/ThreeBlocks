@@ -1,0 +1,636 @@
+.ab 
+    background: #000000
+    font-family: 'Mulish', sans-serif
+    .container
+        max-width: 1320px
+    .nav
+        &__list
+            max-width: 100%
+            margin: 0 auto
+            justify-content: center
+            width: 100%
+        &__link
+            margin: 0
+            &.active 
+                .nav__name 
+                    opacity: 1
+                .nav__prog 
+                    background: #E5FF44
+        &__li 
+            width: 195px
+            margin-right: 20px
+            &:hover 
+                .nav__name 
+                    opacity: 1
+        &:last-child
+            margin-right: 0
+        &__name 
+            font-weight: 300
+            font-size: 20px
+            line-height: 130%
+            color: #FFFFFF
+            opacity: 0.7
+            margin-bottom: 8px
+            transition: opacity 0.3s
+        &__prog
+            width: 100%
+            height: 6px
+            background: rgba(255, 255, 255, 0.7)
+    .header 
+        padding: 0 0 376px
+        &__wrap 
+            position: relative
+            margin-top: 20px
+        &__bg2 
+            display: none
+        &__bg
+            position: absolute
+            left: 0
+            top: 0
+            z-index: 1
+            // @media screen and (max-width: 1399px)
+            //     width: 100%
+        h1 
+            font-family: 'Mulish', sans-serif
+            font-weight: 300
+            font-size: 84px
+            line-height: 130%
+            text-align: center
+            color: #FFFFFF
+            max-width: 100%
+            margin: 0 auto
+            padding-top: 160px
+            .yel
+                color: #E5FF44
+                font-weight: 300
+                font-size: 84px
+                display: inline-block
+    .info 
+        padding: 100px 0 0
+        position: relative
+        &__flex 
+            margin-top: 60px
+            justify-content: space-between
+            align-items: center
+            .info__play 
+                width: 120px
+                height: 44px
+                background: #E5FF44
+                color: black
+                border: 1px solid transparent 
+                &:hover 
+                    border: 1px solid #E5FF44
+                    color: #E5FF44
+                    background: transparent
+        &__el 
+            width: 40.31%
+            height: 310px
+            border: 1px solid #FFFFFF
+            padding: 45px 37px 50px 31px
+            p 
+                font-weight: 300
+                font-size: 20px
+                line-height: 130%
+                letter-spacing: 0.01em
+                margin-top: 20px
+            &_1 
+                position: relative
+                &:after 
+                    content: ""
+                    display: block
+                    width: 236px
+                    height: 40px
+                    position: absolute
+                    bottom: 63px
+                    right: -237px
+                    background: url(img/about/left.svg) no-repeat
+                &:before
+                    content: ""
+                    display: block
+                    width: 236px
+                    height: 40px
+                    position: absolute
+                    top: 61px
+                    right: -237px
+                    background: url(img/about/right.svg) no-repeat
+            &_2 
+                position: relative
+                left: -14px
+        &__play 
+            width: 284px
+            height: 44px
+            font-family: 'Broken Console'
+            border: 1px solid #E5FF44
+            font-weight: 700
+            font-size: 18px
+            letter-spacing: 0.01em
+            color: #E5FF44
+            border-radius: inherit
+            padding-top: 6px
+            &:hover 
+                background: #E5FF44
+                color: black
+        &__title 
+            font-weight: 300
+            max-width: 1055px
+            font-size: 84px
+            line-height: 130%
+            margin: 63px 0
+        &__basket 
+            position: absolute
+            right: 0
+            top: 714px
+            z-index: 0
+        &__text 
+            font-weight: 400
+            font-size: 24px
+            line-height: 130%
+            margin-bottom: 40px
+            &:last-child
+                margin-bottom: 0
+        &__item 
+            position: relative
+            justify-content: space-between
+            align-items: flex-start
+            &_1 
+                margin-bottom: 291px
+            &_2 
+                margin-bottom: 205px
+                .info__nav 
+                    margin-bottom: 60px
+                .info__content 
+                    max-width: 579px
+                .info__pic 
+                    position: absolute
+                    right: 114px
+                    top: 312px
+                    left: inherit
+            &_3
+                margin-bottom: 163px
+                .info__content
+                    justify-content: space-between
+                    max-width: 98%
+                    margin-top: 60px
+                    p 
+                        width: 41%
+            &_4 
+                margin-bottom: 200px
+        &__nav 
+            font-weight: 400
+            font-size: 24px
+            line-height: 130%
+            color: #E5FF44
+            white-space: nowrap
+            position: relative
+            width: max-content
+            span 
+                margin-right: 70px
+            &:after 
+                content: ""
+                display: block
+                position: absolute
+                right: -127px
+                top: 15px
+                height: 1px
+                width: 100px
+                background: white
+        &__pic 
+            position: absolute
+            bottom: -142px
+            left: 120px
+            z-index: 0
+        &__content 
+            max-width: 736px
+            width: 100%
+            &_last 
+                p 
+                    margin-bottom: 22px
+    .footer 
+        position: relative
+        &__box 
+            align-items: center
+            justify-content: space-between
+        &__content 
+            max-width: 849px
+            width: 100%
+        &__li 
+            margin-left: 28px
+            &:first-child
+                margin-left: 0
+        &__list 
+            display: flex
+            justify-content: flex-end
+            margin-bottom: 20px
+        &__link 
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px
+            letter-spacing: 0.01em
+            color: #E5FF44
+            width: max-content
+            border-bottom: 1px solid #E5FF44
+            &:hover 
+                color: white
+                border-bottom: 1px solid white
+        &__text
+            font-size: 10px
+            line-height: 135%
+            letter-spacing: 0.01em
+            color: #8F8F8F
+.yel
+    color: #E5FF44
+.team 
+    margin-top: -158px
+    &__row 
+        margin-bottom: 96px
+        &:nth-child(1)
+            justify-content: flex-end
+        &:nth-child(3)
+            justify-content: flex-end
+    &__item
+        width: 195px
+        text-align: center
+        margin-right: 92px
+        &:last-child
+            margin-right: 0
+        &_sasha 
+            width: 234px
+    &__photo
+        height: 204px
+        width: 195px
+        object-fit: cover
+    &__name 
+        font-weight: 900
+        font-size: 32px
+        line-height: 130%
+        margin-top: 30px
+    &__info 
+        font-weight: 400
+        font-size: 24px
+        line-height: 130%
+.have
+    position: relative
+    padding: 90px 0 315px
+    &__mail 
+        font-weight: 400
+        font-size: 24px
+        line-height: 120%
+        letter-spacing: 0.01em
+        color: #FFFFFF
+        margin-bottom: 32px
+        display: block
+        &:hover 
+            color: #E5FF44
+    .info__play 
+        width: 120px
+        height: 44px
+        background: #E5FF44
+        color: black
+        border: 1px solid transparent 
+        &:hover 
+            border: 1px solid #E5FF44
+            color: #E5FF44
+            background: transparent
+    &__block 
+        width: 411px
+        height: 164px
+        border: 1px solid #FFFFFF
+        padding: 28px 40px
+        position: relative
+        top: 10px
+    .info__title 
+        margin: 0 0 40px
+    &__bg 
+        position: absolute
+        width: 100%
+        height: 37%
+        bottom: 1px
+        left: 0
+        z-index: 0
+    &__box 
+        align-items: center
+        position: relative
+        z-index: 1
+    &__content 
+        max-width: 750px
+        width: 100%
+        flex: 1 0 auto
+    &__text 
+        font-weight: 300
+        font-size: 20px
+        line-height: 130%
+        letter-spacing: 0.01em
+        max-width: 411px
+@media screen and (max-width: 1399px)
+    .ab .header__bg
+        width: 100%
+    .ab .nav__li
+        width: 15%
+        &:last-child
+            margin-right: 0
+    .ab .info__el_2
+        left: -11px
+@media screen and (max-width: 1299px)
+    .ab .nav__li 
+        width: 14.94%
+    .ab .info__basket
+        width: 95%
+    .ab .info__el_2
+        left: 0
+    .ab .info__el_1:before
+        background-size: 97%
+    .ab .info__el_1:after
+        background-size: 97%
+    .ab .footer__content
+        max-width: 790px
+@media screen and (max-width: 1199px)
+    .ab .container
+        max-width: 960px
+    .ab .header h1
+        padding-top: 114px
+        font-size: 60px
+        span 
+            font-size: 60px !important
+    .ab .header
+        padding-bottom: 220px
+    .ab .info__item_1
+        flex-direction: column
+    .ab .info__content
+        max-width: 100% !important
+    .ab .info__nav
+        margin-bottom: 30px !important
+    .ab .info__pic
+        width: 200px
+        bottom: -225px
+        left: 0
+    .ab .info__basket 
+        position: absolute
+        right: 0
+        top: 591px
+        z-index: 0
+        opacity: 0.5
+    .ab .info__title 
+        font-size: 68px
+        margin: 50px 0
+    .ab .info__item_2 .info__pic 
+        right: 0
+        top: inherit
+        left: inherit
+        z-index: 0
+        width: 178px
+        bottom: -107px
+        opacity: 0.5
+    .ab .info__item_3 .info__content
+        flex-direction: column
+    .ab .info__item_3 .info__content p
+        width: 100%
+    .ab .info__el
+        height: auto
+    .ab .info__flex
+        align-items: initial
+    .ab .info__el_1:before
+        background-size: 77%
+    .ab .info__el_1:after
+        background-size: 77%
+    .ab .info__flex .info__play
+        margin-top: 17%
+    .team__photo 
+        height: auto
+        width: 100%
+    .team__item
+        margin-right: 40px
+        width: 195px !important
+    .team__row
+        margin-bottom: 60px
+    .team__name 
+        font-size: 26px
+        line-height: 130%
+        margin-top: 15px
+    .team__info
+        font-size: 21px
+    .ab .info__item_1
+        margin-bottom: 240px
+    .have__content
+        flex: inherit
+        max-width: 450px
+    .ab .footer__content
+        max-width: 500px
+    .ab .nav__li
+        width: 14%
+    .ab .nav__name
+        font-size: 18px
+@media ( max-width: 991px )
+    .ab .container
+        max-width: 720px
+    .ab .nav__list
+        max-width: 100% !important
+    .ab .nav__name
+        font-size: 14px
+    .ab .header h1 
+        padding-top: 75px
+        font-size: 47px
+        span 
+            font-size: 47px !important
+    .ab .header
+        padding-bottom: 140px
+    .ab .info__title
+        font-size: 50px
+    .ab .info__item_2
+        margin-bottom: 160px
+    .ab .info__flex
+        flex-direction: column
+        align-items: center
+    .ab .info__el
+        width: 100%
+        text-align: center
+    .ab .info__el p
+        margin-top: 10px
+    .ab .info__flex .info__play
+        margin: 60px auto
+    .ab .info__el_1:before 
+        left: 0
+        background-size: 68%
+        top: inherit
+        bottom: -141px
+        transform: rotate(90deg)
+    .ab .info__el_1:after
+        right: 0
+        left: inherit
+        background-size: 68%
+        top: inherit
+        bottom: -141px
+        transform: rotate(90deg)
+    .ab .info__item_4
+        margin-bottom: 80px
+    .team__item 
+        margin-right: 40px
+        width: 140px !important
+        flex: 1 0 auto
+        max-width: 140px
+    .team__name
+        font-size: 18px
+    .team__info
+        font-size: 16px
+    .have
+        padding-top: 20px
+    .have__box
+        flex-direction: column
+    .have__content
+        text-align: center
+    .have__text
+        margin: 0 auto
+    .have .info__title 
+        margin: 0 0 25px
+    .have__mail
+        font-size: 22px
+    .have .info__play
+        margin: 0 auto
+    .have__block
+        margin-top: 25px    
+    .ab .footer__box
+        flex-direction: column
+    .ab .footer__list
+        justify-content: center
+        margin: 40px 0
+    .ab .footer__content
+        max-width: 100%
+    .ab .footer__li:nth-child(1)
+        .footer__link
+            margin-left: 0
+@media screen and (max-width: 767px)
+    .ab .nav__list
+        display: none
+    .ab
+        .nav
+            padding: 15px 0
+        .menu 
+            top: 18px
+        .menu .button.active span::after
+            background: #E5FF44
+        .menu .button span
+            background: #E5FF44
+            &:after 
+                background: #E5FF44
+            &:before 
+                background: #E5FF44
+        .burger 
+            .nav__list 
+                display: block
+    .ab .nav__li 
+        width: 34%
+        margin: 0 auto 20px !important
+    .ab .header h1 
+        padding-top: 63px
+        font-size: 38px
+        span 
+            font-size: 38px !important
+    .ab .header
+        padding-bottom: 90px
+    .ab .info__nav span
+        margin-right: 20px
+    .ab .info__nav 
+        margin-bottom: 20px !important
+    .ab .info__text 
+        font-size: 18px
+        margin-bottom: 20px
+    .ab .info__pic
+        width: 150px
+        bottom: -179px
+        left: 0
+    .ab .info__title
+        font-size: 34px
+        margin: 20px 0
+    .ab .info__item_3 .info__content
+        margin-top: 20px
+    .ab .info__item_3
+        margin-bottom: 40px
+    .team__row
+        flex-wrap: wrap
+        justify-content: center !important
+    .team__item
+        margin: 10px !important
+        max-width: inherit
+        flex: inherit
+    .have__bg 
+        width: 100%
+        height: 20%
+        bottom: 27px
+    .ab .container
+        max-width: 540px
+@media screen and (max-width: 576px)
+    .header__bg
+        display: none
+    .header__bg2 
+        margin: 20px auto 0
+        display: block
+        width: 100px
+    .ab .header h1
+        padding-top: 10px
+        line-height: 100%
+    .ab .header
+        padding-bottom: 10px
+    .ab .info__nav:after 
+        right: -83px
+        width: 60px
+    .ab .info__title
+        font-size: 28px
+    .ab .info__play
+        width: 100%
+    .ab .info__item_2 .info__pic 
+        width: 133px
+        bottom: -155px
+    .ab .info__nav
+        font-size: 21px
+    .ab .info__el
+        padding: 20px
+    .ab .info__el p
+        font-size: 18px
+        margin-top: 5px
+    .ab .info__el_1:before
+        left: -100px
+    .ab .info__el_1:after
+        right: -100px
+    .team__item
+        width: 125px !important
+    .team__row
+        margin-bottom: 30px
+    .have__block 
+        width: 100%
+        height: auto
+        padding: 28px 20px
+        position: relative
+        top: 10px
+    .have__mail
+        font-size: 17px
+    .have
+        padding-bottom: 100px
+        padding-top: 0
+    .have__bg 
+        height: 18%
+        bottom: -26px
+    .ab .footer__logo
+        width: 200px
+    .ab .footer__list
+        flex-direction: column
+        margin: 20px 0 10px
+    .ab .footer__li
+        margin: 0 auto 10px !important
+    .ab .footer
+        padding: 60px 0 13px
+    .ab .footer__text
+        font-size: 8px
+    .team__name
+        font-size: 16px
+        margin-top: 10px
+    .team__info
+        font-size: 14px
+    .team
+        margin-top: -180px
+    .ab .info 
+        padding: 60px 0 0
+    .ab .burger.active
+        padding-top: 100px !important
+@media only screen and (max-height: 750px)
+    .ab .header__bg
+        right: 0
+        width: 100% 

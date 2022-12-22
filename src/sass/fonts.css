@@ -49,3 +49,29 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Broken Console';
+    src: url('BrokenConsole-BoldShadow.eot');
+    src: url('BrokenConsole-BoldShadow.eot?#iefix') format('embedded-opentype'),
+        url('BrokenConsole-BoldShadow.woff2') format('woff2'),
+        url('BrokenConsole-BoldShadow.woff') format('woff'),
+        url('BrokenConsole-BoldShadow.ttf') format('truetype'),
+        url('BrokenConsole-BoldShadow.svg#BrokenConsole-BoldShadow') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Broken Console';
+    src: url('BrokenConsole-Bold.eot');
+    src: url('BrokenConsole-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BrokenConsole-Bold.woff2') format('woff2'),
+        url('BrokenConsole-Bold.woff') format('woff'),
+        url('BrokenConsole-Bold.ttf') format('truetype'),
+        url('BrokenConsole-Bold.svg#BrokenConsole-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
